@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+
+  <main class="min-h-screen bg-slate-950 pt-16 flex flex-col">
+    <div class="relative flex-1 w-full bg-slate-950 overflow-hidden">
+      <!-- Premium Loading Overlay -->
+      <div
+        id="map-loading"
+        class="absolute inset-0 flex flex-col items-center justify-center bg-slate-950 z-10 transition-opacity duration-300"
+      >
+        <div class="flex flex-col items-center gap-4">
+          <span class="loading loading-ring loading-lg text-primary size-16"
+          ></span>
+          <div class="flex flex-col items-center gap-1">
+            <h3
+              class="text-lg font-bold text-slate-100 tracking-wide uppercase"
+            >
+              Connecting to Server
+            </h3>
+            <p class="text-xs text-slate-400 font-sans tracking-wide">
+              Loading Live Map...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Map Iframe -->
+      <iframe
+        src={import.meta.env.VITE_SERVER_ADDRESS_LIVE_MAP}
+        class="w-full h-full min-h-[calc(100vh-64px)] border-0"
+        allowfullscreen
+        onload="const loader = document.getElementById('map-loading'); if (loader) { loader.style.opacity = '0'; setTimeout(() => loader.remove(), 300); }"
+      ></iframe>
+    </div>
+  </main>
+</Layout>

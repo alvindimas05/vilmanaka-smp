@@ -1,0 +1,65 @@
+---
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+import { faHouse, faMap, faBars } from "@fortawesome/free-solid-svg-icons";
+import iconText from "../assets/icon-text.webp";
+
+library.add(faHouse, faMap, faBars);
+
+const homeIcon = icon(faHouse).html[0];
+const mapIcon = icon(faMap).html[0];
+const barsIcon = icon(faBars).html[0];
+
+const { pathname } = Astro.url;
+const currentPath = pathname.replace(/\/$/, "") || "/";
+
+const isHomeActive = currentPath === "/";
+const isMapActive = currentPath === "/map";
+---
+
+<div class="navbar bg-slate-900/50 backdrop-blur-md fixed top-0 w-full z-50 border-b border-slate-700/50 text-slate-200">
+  <div class="navbar-start">
+    <a href="/" class="btn btn-ghost hover:bg-transparent h-auto py-2">
+      <img src={iconText.src} alt="Vilmanaka SMP" class="h-8" />
+    </a>
+  </div>
+  
+  <div class="navbar-end">
+    <!-- Desktop Navigation -->
+    <ul class="menu menu-horizontal px-1 gap-2 hidden lg:flex">
+      <li>
+        <a href="/" class={isHomeActive ? "bg-slate-800 text-white rounded-lg font-medium" : "hover:bg-slate-800 rounded-lg"}>
+          <div class="w-4 h-4 flex items-center justify-center" set:html={homeIcon}></div>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/map" class={isMapActive ? "bg-slate-800 text-white rounded-lg font-medium" : "hover:bg-slate-800 rounded-lg"}>
+          <div class="w-4 h-4 flex items-center justify-center" set:html={mapIcon}></div>
+          Live Map
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="dropdown dropdown-end lg:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost" aria-label="Menu">
+        <div class="w-5 h-5 flex items-center justify-center" set:html={barsIcon}></div>
+      </div>
+      <ul tabindex="0" class="menu menu-md dropdown-content z-[1] p-4 shadow-xl bg-slate-900/95 backdrop-blur-md w-full fixed left-0 top-[65px] border-b border-slate-700/50 rounded-b-2xl gap-2 mt-0">
+        <li>
+          <a href="/" class={isHomeActive ? "bg-slate-800 text-white font-medium py-3 rounded-lg" : "hover:bg-slate-800 text-slate-300 py-3 rounded-lg"}>
+            <div class="w-5 h-5 flex items-center justify-center mr-2" set:html={homeIcon}></div>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="/map" class={isMapActive ? "bg-slate-800 text-white font-medium py-3 rounded-lg" : "hover:bg-slate-800 text-slate-300 py-3 rounded-lg"}>
+            <div class="w-5 h-5 flex items-center justify-center mr-2" set:html={mapIcon}></div>
+            Live Map
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
