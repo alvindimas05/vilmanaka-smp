@@ -1,9 +1,14 @@
 ---
 import { library, icon } from "@fortawesome/fontawesome-svg-core";
-import { faHouse, faMap, faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faMap,
+  faBars,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 import iconText from "../assets/icon-text.webp";
 
-library.add(faHouse, faMap, faBars);
+library.add(faHouse, faMap, faBars, faTimes);
 
 const homeIcon = icon(faHouse).html[0];
 const mapIcon = icon(faMap).html[0];
@@ -16,50 +21,129 @@ const isHomeActive = currentPath === "/";
 const isMapActive = currentPath === "/map";
 ---
 
-<div class="navbar bg-slate-900/50 backdrop-blur-md fixed top-0 w-full z-50 border-b border-slate-700/50 text-slate-200">
-  <div class="navbar-start">
-    <a href="/" class="btn btn-ghost hover:bg-transparent h-auto py-2">
-      <img src={iconText.src} alt="Vilmanaka SMP" class="h-8" />
-    </a>
+<nav
+  class="navbar-neon fixed top-0 w-full z-50 px-6 flex items-center justify-between h-16"
+>
+  <!-- Corner decorations -->
+  <div
+    class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-purple-400/60 pointer-events-none"
+  >
   </div>
-  
-  <div class="navbar-end">
-    <!-- Desktop Navigation -->
-    <ul class="menu menu-horizontal px-1 gap-2 hidden lg:flex">
-      <li>
-        <a href="/" class={isHomeActive ? "bg-slate-800 text-white rounded-lg font-medium" : "hover:bg-slate-800 rounded-lg"}>
-          <div class="w-4 h-4 flex items-center justify-center" set:html={homeIcon}></div>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="/map" class={isMapActive ? "bg-slate-800 text-white rounded-lg font-medium" : "hover:bg-slate-800 rounded-lg"}>
-          <div class="w-4 h-4 flex items-center justify-center" set:html={mapIcon}></div>
-          Live Map
-        </a>
-      </li>
-    </ul>
+  <div
+    class="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-purple-400/60 pointer-events-none"
+  >
+  </div>
 
-    <!-- Mobile Dropdown Navigation -->
-    <div class="dropdown dropdown-end lg:hidden">
-      <div tabindex="0" role="button" class="btn btn-ghost" aria-label="Menu">
-        <div class="w-5 h-5 flex items-center justify-center" set:html={barsIcon}></div>
-      </div>
-      <ul tabindex="0" class="menu menu-md dropdown-content z-[1] p-4 shadow-xl bg-slate-900/95 backdrop-blur-md w-full fixed left-0 top-[65px] border-b border-slate-700/50 rounded-b-2xl gap-2 mt-0">
-        <li>
-          <a href="/" class={isHomeActive ? "bg-slate-800 text-white font-medium py-3 rounded-lg" : "hover:bg-slate-800 text-slate-300 py-3 rounded-lg"}>
-            <div class="w-5 h-5 flex items-center justify-center mr-2" set:html={homeIcon}></div>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/map" class={isMapActive ? "bg-slate-800 text-white font-medium py-3 rounded-lg" : "hover:bg-slate-800 text-slate-300 py-3 rounded-lg"}>
-            <div class="w-5 h-5 flex items-center justify-center mr-2" set:html={mapIcon}></div>
-            Live Map
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <!-- Logo -->
+  <a
+    href="/"
+    class="relative group flex items-center gap-2 hover:opacity-90 transition-opacity duration-300"
+  >
+    <img
+      src={iconText.src}
+      alt="Vilmanaka SMP"
+      class="h-8 drop-shadow-[0_0_8px_rgba(191,0,255,0.55)]"
+    />
+    <span
+      class="absolute -inset-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      style="background: radial-gradient(ellipse, rgba(191,0,255,0.08) 0%, transparent 70%)"
+    ></span>
+  </a>
+
+  <!-- Desktop Nav -->
+  <ul class="hidden lg:flex items-center gap-2">
+    <li>
+      <a
+        href="/"
+        id="nav-home"
+        class={`nav-link flex items-center gap-2 px-5 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
+          isHomeActive
+            ? "text-purple-300 bg-purple-400/10 border border-purple-400/50 shadow-[0_0_16px_rgba(191,0,255,0.3)]"
+            : "text-slate-400 border border-transparent hover:text-purple-300 hover:border-purple-400/30 hover:bg-purple-400/05 hover:shadow-[0_0_12px_rgba(191,0,255,0.15)]"
+        }`}
+      >
+        <span
+          class="w-4 h-4 flex items-center justify-center"
+          set:html={homeIcon}></span>
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/map"
+        id="nav-map"
+        class={`nav-link flex items-center gap-2 px-5 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
+          isMapActive
+            ? "text-cyan-300 bg-cyan-400/10 border border-cyan-400/50 shadow-[0_0_16px_rgba(0,245,255,0.3)]"
+            : "text-slate-400 border border-transparent hover:text-cyan-300 hover:border-cyan-400/30 hover:bg-cyan-400/05 hover:shadow-[0_0_12px_rgba(0,245,255,0.15)]"
+        }`}
+      >
+        <span
+          class="w-4 h-4 flex items-center justify-center"
+          set:html={mapIcon}></span>
+        Live Map
+      </a>
+    </li>
+  </ul>
+
+  <!-- Mobile burger -->
+  <button
+    id="mobile-menu-btn"
+    class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-purple-400/30 text-purple-400 hover:bg-purple-400/10 hover:shadow-[0_0_12px_rgba(191,0,255,0.3)] transition-all duration-300"
+    aria-label="Menu"
+  >
+    <span class="w-5 h-5 flex items-center justify-center" set:html={barsIcon}
+    ></span>
+  </button>
+</nav>
+
+<!-- Mobile menu panel -->
+<div
+  id="mobile-menu"
+  class="lg:hidden fixed top-16 left-0 w-full z-40 glass-panel border-t-0 border-x-0 border-b border-purple-400/20 overflow-hidden transition-all duration-400 ease-in-out max-h-0"
+  style="box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 4px 20px rgba(191,0,255,0.08);"
+>
+  <ul class="flex flex-col gap-2 p-4">
+    <li>
+      <a
+        href="/"
+        class={`flex items-center gap-3 px-4 py-3 rounded-lg font-orbitron text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
+          isHomeActive
+            ? "text-purple-300 bg-purple-400/10 border border-purple-400/40 shadow-[0_0_12px_rgba(191,0,255,0.2)]"
+            : "text-slate-400 border border-transparent hover:text-purple-300 hover:border-purple-400/30 hover:bg-purple-400/05"
+        }`}
+      >
+        <span
+          class="w-5 h-5 flex items-center justify-center"
+          set:html={homeIcon}></span>
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/map"
+        class={`flex items-center gap-3 px-4 py-3 rounded-lg font-orbitron text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
+          isMapActive
+            ? "text-cyan-300 bg-cyan-400/10 border border-cyan-400/40 shadow-[0_0_12px_rgba(0,245,255,0.2)]"
+            : "text-slate-400 border border-transparent hover:text-cyan-300 hover:border-cyan-400/30 hover:bg-cyan-400/05"
+        }`}
+      >
+        <span
+          class="w-5 h-5 flex items-center justify-center"
+          set:html={mapIcon}></span>
+        Live Map
+      </a>
+    </li>
+  </ul>
 </div>
 
+<script>
+  const btn = document.getElementById("mobile-menu-btn") as HTMLButtonElement;
+  const menu = document.getElementById("mobile-menu") as HTMLDivElement;
+  let open = false;
+
+  btn?.addEventListener("click", () => {
+    open = !open;
+    menu.style.maxHeight = open ? menu.scrollHeight + "px" : "0";
+  });
+</script>
