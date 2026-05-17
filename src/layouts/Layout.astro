@@ -1,5 +1,9 @@
-<!doctype html>
-<html lang="en">
+---
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -10,14 +14,13 @@
 	</head>
 	<body>
 		<slot />
+		<style>
+			html,
+			body {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
