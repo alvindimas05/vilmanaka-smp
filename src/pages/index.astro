@@ -64,7 +64,7 @@ const whatsappIcon = icon(faWhatsapp).html[0];
           class="font-rajdhani text-lg text-slate-300/90 max-w-md leading-relaxed"
           style="text-shadow: 0 0 20px rgba(191,0,255,0.15);"
         >
-          Server berbasis <span class="neon-text-green" style="animation: none;"
+          Server berbasis <span class="neon-text-orange" style="animation: none;"
             >Survival Mix</span
           > dimana para builder bisa membangun dengan tenang.
         </p>
@@ -164,7 +164,7 @@ const whatsappIcon = icon(faWhatsapp).html[0];
           style="animation-delay: 0.5s;"
         >
           <a
-            href="#"
+            href={import.meta.env.VITE_DISCORD_LINK}
             id="btn-discord"
             class="neon-btn-discord flex items-center gap-2 px-6 py-3 rounded-lg cursor-pointer"
           >
@@ -174,7 +174,7 @@ const whatsappIcon = icon(faWhatsapp).html[0];
             Discord
           </a>
           <a
-            href="#"
+            href={import.meta.env.VITE_WHATSAPP_LINK}
             id="btn-whatsapp"
             class="neon-btn-green flex items-center gap-2 px-6 py-3 rounded-lg cursor-pointer"
           >

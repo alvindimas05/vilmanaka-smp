@@ -10,6 +10,7 @@
   --neon-pink:   #ff006e;
   --neon-green:  #00ff88;
   --neon-blue:   #0066ff;
+  --neon-orange: #ff7700;
   --dark-bg:     #030712;
   --dark-panel:  rgba(3, 7, 18, 0.85);
   --grid-color:  rgba(208, 102, 255, 0.05);
@@ -18,6 +19,7 @@
   --glow-purple: 0 0 8px #d066ff, 0 0 20px rgba(208, 102, 255, 0.35), 0 0 40px rgba(208, 102, 255, 0.15);
   --glow-pink:   0 0 8px #ff006e, 0 0 20px #ff006e55, 0 0 40px #ff006e22;
   --glow-green:  0 0 8px #00ff88, 0 0 20px #00ff8855, 0 0 40px #00ff8822;
+  --glow-orange: 0 0 8px #ff7700, 0 0 20px #ff770055, 0 0 40px #ff770022;
 }
 
 /* ─── Base Reset ─── */
@@ -153,6 +155,10 @@ body::after {
 .neon-text-green {
   color: var(--neon-green);
   text-shadow: var(--glow-green);
+}
+.neon-text-orange {
+  color: var(--neon-orange);
+  text-shadow: var(--glow-orange);
 }
 
 .neon-border-cyan {
