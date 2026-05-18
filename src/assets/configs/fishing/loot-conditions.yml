@@ -1,0 +1,178 @@
+# Probability Pool logic for EvenMoreFish Migration
+
+global_pool:
+  sub-groups:
+    overworld_fishes:
+      conditions:
+        world:
+          - world
+      list:
+        - 'group_for_each:common_ow:+100'
+        - 'group_for_each:rare_ow:+25'
+      sub-groups:
+        ow_reef:
+          conditions:
+            biome:
+              - minecraft:warm_ocean
+              - minecraft:lukewarm_ocean
+              - minecraft:deep_lukewarm_ocean
+          list:
+            - 'group_for_each:epic_reef:+7'
+            - 'group_for_each:leg_reef:+2'
+        ow_pelagic:
+          conditions:
+            biome:
+              - minecraft:ocean
+              - minecraft:deep_ocean
+              - minecraft:cold_ocean
+              - minecraft:deep_cold_ocean
+          list:
+            - 'group_for_each:leg_pelagic:+2'
+        ow_deep:
+          conditions:
+            biome:
+              - minecraft:deep_ocean
+              - minecraft:deep_cold_ocean
+              - minecraft:frozen_ocean
+              - minecraft:deep_frozen_ocean
+              - minecraft:deep_lukewarm_ocean
+          list:
+            - 'group_for_each:leg_deep:+2'
+            - 'group_for_each:mythical_ow:+0.1'
+
+    nether_fishes:
+      conditions:
+        world:
+          - world_nether
+      list:
+        - 'group_for_each:common_nether_univ:+100'
+        - 'group_for_each:rare_nether_univ:+25'
+        - 'group_for_each:epic_nether_univ:+7'
+        - 'group_for_each:mythical_nether:+0.1'
+      sub-groups:
+        nether_warped:
+          conditions:
+            biome:
+              - minecraft:warped_forest
+          list:
+            - 'group_for_each:common_nether_warped:+100'
+            - 'group_for_each:rare_nether_warped:+25'
+        nether_soul:
+          conditions:
+            biome:
+              - minecraft:soul_sand_valley
+          list:
+            - 'group_for_each:rare_nether_soul:+25'
+            - 'group_for_each:epic_nether_soul:+7'
+        nether_hot:
+          conditions:
+            biome:
+              - minecraft:nether_wastes
+              - minecraft:basalt_deltas
+          list:
+            - 'group_for_each:leg_nether_hot:+2'
+
+    end_fishes:
+      conditions:
+        world:
+          - world_the_end
+      list:
+        - 'barreleye_fish:+0.01'
+
+bait_effects:
+  sub-groups:
+    nautilus_effect:
+      conditions:
+        bait:
+          - nautilus_bait
+      list:
+        - 'group_available_for_each:leg_reef:*3.0'
+        - 'group_available_for_each:leg_pelagic:*3.0'
+        - 'group_available_for_each:leg_deep:*3.0'
+    
+    bobber_effect:
+      conditions:
+        bait:
+          - bobber_bait
+      list:
+        - 'group_available_for_each:common_ow:*1.5'
+        - 'group_available_for_each:common_nether_univ:*1.5'
+        - 'group_available_for_each:common_nether_warped:*1.5'
+        - 'group_available_for_each:rare_ow:*1.5'
+        - 'group_available_for_each:rare_nether_univ:*1.5'
+        - 'group_available_for_each:rare_nether_warped:*1.5'
+        - 'group_available_for_each:rare_nether_soul:*1.5'
+    
+    ender_effect:
+      conditions:
+        bait:
+          - ender_bait
+      list:
+        - 'barreleye_fish:*10.0'
+        
+    iridescent_effect:
+      conditions:
+        bait:
+          - iridescent_bait
+      list:
+        - 'group_available_for_each:epic_reef:*4.0'
+        
+    sea_heart_effect:
+      conditions:
+        bait:
+          - sea_heart_bait
+      list:
+        - 'group_available_for_each:epic_reef:*2.5'
+        - 'group_available_for_each:leg_pelagic:*2.5'
+        
+    gelatin_effect:
+      conditions:
+        bait:
+          - gelatin_bait
+      list:
+        - 'group_available_for_each:leg_deep:*5.0'
+        - 'group_available_for_each:mythical_ow:*2.0'
+        
+    copper_effect:
+      conditions:
+        bait:
+          - copper_bait
+      list:
+        - 'catfish:*3.0'
+        - 'carp:*3.0'
+        - 'perch:*3.0'
+        - 'bass:*3.0'
+        - 'pike:*3.0'
+        - 'crayfish:*3.0'
+        - 'crab:*3.0'
+        
+    trident_effect:
+      conditions:
+        bait:
+          - trident_bait
+      list:
+        - 'group_available_for_each:leg_reef:*5.0'
+        - 'group_available_for_each:leg_pelagic:*5.0'
+        - 'group_available_for_each:leg_deep:*5.0'
+        
+    slime_effect:
+      conditions:
+        bait:
+          - slime_bait
+      list:
+        - 'snail:*4.0'
+        - 'mussel:*4.0'
+        - 'clam:*4.0'
+        - 'amphipod:*4.0'
+        - 'freshwater_sponge:*4.0'
+        - 'crayfish:*4.0'
+        - 'crab:*4.0'
+        
+    magma_effect:
+      conditions:
+        bait:
+          - magma_bait
+      list:
+        - 'group_available_for_each:epic_nether_univ:*4.0'
+        - 'group_available_for_each:epic_nether_soul:*4.0'
+        - 'group_available_for_each:leg_nether_hot:*4.0'

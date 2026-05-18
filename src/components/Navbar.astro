@@ -6,15 +6,17 @@ import {
   faBars,
   faTimes,
   faBook,
+  faFish,
 } from "@fortawesome/free-solid-svg-icons";
 import iconText from "../assets/images/icon-text.webp";
 
-library.add(faHouse, faMap, faBars, faTimes, faBook);
+library.add(faHouse, faMap, faBars, faTimes, faBook, faFish);
 
 const homeIcon = icon(faHouse).html[0];
 const mapIcon = icon(faMap).html[0];
 const barsIcon = icon(faBars).html[0];
 const bookIcon = icon(faBook).html[0];
+const fishIcon = icon(faFish).html[0];
 
 const { pathname } = Astro.url;
 const currentPath = pathname.replace(/\/$/, "") || "/";
@@ -22,6 +24,7 @@ const currentPath = pathname.replace(/\/$/, "") || "/";
 const isHomeActive = currentPath === "/";
 const isMapActive = currentPath === "/map";
 const isEnchantmentsActive = currentPath === "/enchantments";
+const isFishingActive = currentPath === "/fishing";
 ---
 
 <nav
@@ -86,6 +89,23 @@ const isEnchantmentsActive = currentPath === "/enchantments";
           set:html={bookIcon}
         />
         Enchantments
+      </a>
+    </li>
+    <li>
+      <a
+        href="/fishing"
+        id="nav-fishing"
+        class={`nav-link flex items-center gap-2 px-5 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
+          isFishingActive
+            ? "text-blue-300 bg-blue-400/10 border border-blue-400/50 shadow-[0_0_16px_rgba(59,130,246,0.3)]"
+            : "text-slate-400 border border-transparent hover:text-blue-300 hover:border-blue-400/30 hover:bg-blue-400/05 hover:shadow-[0_0_12px_rgba(59,130,246,0.15)]"
+        }`}
+      >
+        <span
+          class="w-4 h-4 flex items-center justify-center"
+          set:html={fishIcon}
+        />
+        Fishing
       </a>
     </li>
     <li>
@@ -173,6 +193,22 @@ const isEnchantmentsActive = currentPath === "/enchantments";
           set:html={bookIcon}
         />
         Enchantments
+      </a>
+    </li>
+    <li>
+      <a
+        href="/fishing"
+        class={`flex items-center gap-3 px-4 py-3 rounded-lg font-orbitron text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
+          isFishingActive
+            ? "text-blue-300 bg-blue-400/10 border border-blue-400/40 shadow-[0_0_12px_rgba(59,130,246,0.2)]"
+            : "text-slate-400 border border-transparent hover:text-blue-300 hover:border-blue-400/30 hover:bg-blue-400/05"
+        }`}
+      >
+        <span
+          class="w-5 h-5 flex items-center justify-center"
+          set:html={fishIcon}
+        />
+        Fishing
       </a>
     </li>
   </ul>

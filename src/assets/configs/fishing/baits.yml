@@ -1,0 +1,42 @@
+nautilus_bait:
+  nick: "Nautilus Bait"
+  material: nautilus_shell
+
+bobber_bait:
+  nick: "Bobber Bait"
+  material: clay_ball
+
+ender_bait:
+  nick: "Ender Bait"
+  material: ender_pearl
+  max-baits: 1
+  infinite: false
+
+iridescent_bait:
+  nick: "Iridescent Bait"
+  material: ItemsAdder:fishing_expansion:iridescent_bait
+
+sea_heart_bait:
+  nick: "Sea Heart Bait"
+  material: ItemsAdder:fishing_expansion:sea_heart_bait
+
+gelatin_bait:
+  nick: "Gelatin Bait"
+  material: ItemsAdder:fishing_expansion:gelatin_bait
+
+copper_bait:
+  nick: "Copper Bait"
+  material: ItemsAdder:fishing_expansion:copper_bait
+
+trident_bait:
+  nick: "Trident Bait"
+  material: ItemsAdder:fishing_expansion:trident_bait
+  max-baits: 3
+
+slime_bait:
+  nick: "Slime Bait"
+  material: ItemsAdder:fishing_expansion:slime_bait
+
+magma_bait:
+  nick: "Magma Bait"
+  material: ItemsAdder:fishing_expansion:magma_bait

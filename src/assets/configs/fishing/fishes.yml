@@ -1,0 +1,910 @@
+# OVERWORLD — Common Rarity
+'trout':
+  display:
+    name: '<b><white>Trout'
+    lore:
+      - '<gray>Commonly found in cold, clear streams,'
+      - '<gray>this fish has been a staple for local'
+      - '<gray>fishermen for generations.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:trout'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'sardine':
+  display:
+    name: '<b><white>Sardine'
+    lore:
+      - '<gray>Known for traveling in massive shimmering'
+      - '<gray>schools, they are a vital foundation for'
+      - '<gray>the entire ocean ecosystem.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:sardine'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'herring':
+  display:
+    name: '<b><white>Herring'
+    lore:
+      - '<gray>Small but persistent, these fish migrate'
+      - '<gray>across vast distances, often followed'
+      - '<gray>by much larger predators.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:herring'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'perch':
+  display:
+    name: '<b><white>Perch'
+    lore:
+      - '<gray>A hardy freshwater fish that thrives'
+      - '<gray>in almost any lake environment, even'
+      - '<gray>resilient to murky waters.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:perch'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'carp':
+  display:
+    name: '<b><white>Carp'
+    lore:
+      - '<gray>Symbolizing resilience and bravery,'
+      - '<gray>the carp is a slow but steady dweller'
+      - '<gray>of calm river bends.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:carp'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'snail':
+  display:
+    name: '<b><white>Snail'
+    lore:
+      - '<gray>A slow-moving mollusk that leaves'
+      - '<gray>a glistening trail along the riverbeds'
+      - '<gray>as it scavenges for food.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:snail'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'mussel':
+  display:
+    name: '<b><white>Mussel'
+    lore:
+      - '<gray>Filter-feeders found clinging tightly to'
+      - '<gray>submerged rocks, they help keep the'
+      - '<gray>waters clear and pristine.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:mussel'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'clam':
+  display:
+    name: '<b><white>Clam'
+    lore:
+      - '<gray>Buried deep within the sandy floors,'
+      - '<gray>these silent observers of the tides'
+      - '<gray>rarely leave their shells.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:clam'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'amphipod':
+  display:
+    name: '<b><white>Amphipod'
+    lore:
+      - '<gray>Tiny, shrimp-like crustaceans that'
+      - '<gray>skitter through the sediment, playing'
+      - '<gray>a quiet role in the deep.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:amphipod'
+  group: 
+    - common_ow
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+
+# OVERWORLD — Rare Rarity
+'pike':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Pike'
+    lore:
+      - '<gray>An aggressive ambush predator known'
+      - '<gray>to strike from the shadows of aquatic'
+      - '<gray>vegetation with lightning speed.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:pike'
+  group: 
+    - rare_ow
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'lckerel':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Mackerel'
+    lore:
+      - '<gray>Sleek and incredibly fast swimmers of'
+      - '<gray>the open ocean, with silver scales that'
+      - '<gray>glimmer like mirrors.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:mackerel'
+  group: 
+    - rare_ow
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'catfish':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Catfish'
+    lore:
+      - '<gray>Persistent bottom dwellers that use'
+      - '<gray>their sensitive whiskers to find hidden'
+      - '<gray>morsels in the darkest depths.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:catfish'
+  group: 
+    - rare_ow
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'bass':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Bass'
+    lore:
+      - '<gray>Renowned among anglers for their'
+      - '<gray>fighting spirit, often found hiding'
+      - '<gray>beneath lily pads and logs.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:bass'
+  group: 
+    - rare_ow
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'crayfish':
+  display:
+    name: '<b><i><gradient:#00FFFF:#008B8B>Crayfish'
+    lore:
+      - '<gray>Small but territorial scavengers that'
+      - '<gray>patrol rocky riverbeds, ever ready to'
+      - '<gray>snap at anything that intrudes.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:crayfish'
+  group: 
+    - rare_ow
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'crab':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Crab'
+    lore:
+      - '<gray>Armored walkers of the shoreline,'
+      - '<gray>they scuttle sideways between tide'
+      - '<gray>pools in search of treasures.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:crab'
+  group: 
+    - rare_ow
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'freshwater_sponge':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Freshwater Sponge'
+    lore:
+      - '<gray>A primitive organism that grows in'
+      - '<gray>quiet waters, filtering nutrients through'
+      - '<gray>its soft, porous body.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:freshwater_sponge'
+  group: 
+    - rare_ow
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+
+# OVERWORLD — Epic Rarity (Reef)
+'trigger_fish':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Trigger Fish'
+    lore:
+      - '<gray>Vibrant and defensive, it can lock its'
+      - '<gray>spines to secure itself inside coral'
+      - '<gray>crevices when threatened.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:trigger_fish'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'surgeonfish':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Surgeonfish'
+    lore:
+      - '<gray>Named for the sharp, blade-like'
+      - '<gray>spines on their tails, they are the'
+      - '<gray>fierce guardians of the coral reef.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:surgeonfish'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'parrotfish':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Parrotfish'
+    lore:
+      - '<gray>With beak-like teeth used to grind'
+      - '<gray>coral into sand, they play a huge role'
+      - '<gray>in shaping tropical beaches.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:parrotfish'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'damsel_fish':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Damsel Fish'
+    lore:
+      - '<gray>Brightly colored and highly territorial,'
+      - '<gray>these small fish will bravely defend'
+      - '<gray>their patch of the reef from any.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:damsel_fish'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'butterflyfish':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Butterflyfish'
+    lore:
+      - '<gray>Adorned with intricate, wing-like'
+      - '<gray>patterns, they dance through the'
+      - '<gray>coral like delicate insects.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:butterflyfish'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'angelfish':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Angelfish'
+    lore:
+      - '<gray>Majestic swimmers with long flowing'
+      - '<gray>fins, often considered the most elegant'
+      - '<gray>residents of the coral cities.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:angelfish'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'snapper':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Snapper'
+    lore:
+      - '<gray>Quick strikers with sharp instincts,'
+      - '<gray>they are powerful hunters that roam'
+      - '<gray>the reefs in organized groups.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:snapper'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'grouper':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Grouper'
+    lore:
+      - '<gray>Large, solitary masters of the deep'
+      - '<gray>reef, they can swallow prey whole'
+      - '<gray>with a single powerful gulp.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:grouper'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'redfish':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Redfish'
+    lore:
+      - '<gray>With scales that reflect the deep'
+      - '<gray>hues of a setting sun, they are'
+      - '<gray>a rare prize for any coastal angler.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:redfish'
+  group: 
+    - epic_reef
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+
+# OVERWORLD — Legendary Rarity
+'moray_eel':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Moray Eel'
+    lore:
+      - '<gray>Hidden within dark crevices, they'
+      - '<gray>wait patiently to strike at anything'
+      - '<gray>that wanders too close to their lair.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:moray_eel'
+  group: 
+    - leg_reef
+  size: 150~400
+  price:
+    base: 20000
+    bonus: 100.0
+'lion_fish':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Lion Fish'
+    lore:
+      - '<gray>A beautiful but dangerously venomous'
+      - '<gray>spectacle, with fan-like fins that'
+      - '<gray>hide sharp, toxic needles.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:lion_fish'
+  group: 
+    - leg_reef
+  size: 150~400
+  price:
+    base: 20000
+    bonus: 100.0
+
+'wahoo':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Wahoo'
+    lore:
+      - '<gray>One of the fastest fish in the ocean,'
+      - '<gray>built with a torpedo-shaped body for'
+      - '<gray>extreme bursts of speed.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:wahoo'
+  group: 
+    - leg_pelagic
+  size: 150~400
+  price:
+    base: 25000
+    bonus: 125.0
+'tuna':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Tuna'
+    lore:
+      - '<gray>Built for relentless long-distance'
+      - '<gray>travel, these tireless swimmers never'
+      - '<gray>stop moving through the open blue.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:tuna'
+  group: 
+    - leg_pelagic
+  size: 150~400
+  price:
+    base: 25000
+    bonus: 125.0
+'sword_fish':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Sword Fish'
+    lore:
+      - '<gray>Armed with a formidable bill, they'
+      - '<gray>slash through schools of prey to'
+      - '<gray>stun and capture their meal.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:sword_fish'
+  group: 
+    - leg_pelagic
+  size: 150~400
+  price:
+    base: 25000
+    bonus: 125.0
+'snook':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Snook'
+    lore:
+      - '<gray>An elusive prize of the coastal'
+      - '<gray>mangroves, known for their'
+      - '<gray>intelligence and powerful runs.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:snook'
+  group: 
+    - leg_pelagic
+  size: 150~400
+  price:
+    base: 25000
+    bonus: 125.0
+'marlin':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Marlin'
+    lore:
+      - '<gray>The ultimate peak of pelagic endurance,'
+      - '<gray>famed for their acrobatic leaps when'
+      - '<gray>hooked by the bravest of sailors.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:marlin'
+  group: 
+    - leg_pelagic
+  size: 150~400
+  price:
+    base: 25000
+    bonus: 125.0
+'barracuda':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Barracuda'
+    lore:
+      - '<gray>A fierce predator with jagged teeth,'
+      - '<gray>known to follow shiny objects through'
+      - '<gray>the water with intense curiosity.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:barracuda'
+  group: 
+    - leg_pelagic
+  size: 150~400
+  price:
+    base: 25000
+    bonus: 125.0
+
+'viper_fish':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Viper Fish'
+    lore:
+      - '<gray>A terrifying sight from the abyss,'
+      - '<gray>with teeth so large they don''t even'
+      - '<gray>fit inside its own mouth.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:viper_fish'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+'vampire_squid':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Vampire Squid'
+    lore:
+      - '<gray>Named for its dark, cloak-like cape,'
+      - '<gray>it drifts through the oxygen-depleted'
+      - '<gray>depths where few others can survive.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:vampire_squid'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+'lanternfish':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Lanternfish'
+    lore:
+      - '<gray>Guiding light of the crushing deep,'
+      - '<gray>its bioluminescence serves as both'
+      - '<gray>a lure and a warning to others.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:lanternfish'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+'gulper_eel':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Gulper Eel'
+    lore:
+      - '<gray>Equipped with a massive, hinged jaw,'
+      - '<gray>it can swallow creatures much larger'
+      - '<gray>than itself in the eternal darkness.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:gulper_eel'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+'giant_isopod':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Giant Isopod'
+    lore:
+      - '<gray>Ancient scavengers of the seafloor,'
+      - '<gray>these armored giants have remained'
+      - '<gray>unchanged for millions of years.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:giant_isopod'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+'dumbo_octopus':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Dumbo Octopus'
+    lore:
+      - '<gray>Graceful fins that look like ears'
+      - '<gray>allow this deep-sea cephalopod to'
+      - '<gray>flap elegantly through the abyss.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:dumbo_octopus'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+'dragon_fish':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Dragon Fish'
+    lore:
+      - '<gray>A bioluminescent hunter that uses'
+      - '<gray>a glowing barbel to trick unsuspecting'
+      - '<gray>prey into its waiting maw.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:dragon_fish'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+'blobfish':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Blobfish'
+    lore:
+      - '<gray>Perfectly adapted to the crushing'
+      - '<gray>pressure of the depths, it looks quite'
+      - '<gray>different in its natural habitat.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:blobfish'
+  group: 
+    - leg_deep
+  size: 150~400
+  price:
+    base: 30000
+    bonus: 150.0
+
+# OVERWORLD — Mythical Rarity
+'anglerfish':
+  display:
+    name: '<b><i><gradient:#BF00FF:#800080>Anglerfish'
+    lore:
+      - '<gray>A mythical nightmare of the abyss,'
+      - '<gray>luring the curious with a light that'
+      - '<gray>shines like a misplaced star.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:anglerfish'
+  group: 
+    - mythical_ow
+  size: 400~800
+
+# NETHER
+'rustfin':
+  display:
+    name: '<b><white>Rustfin'
+    lore:
+      - '<gray>With scales hardened by volcanic ash'
+      - '<gray>and iron sediment, it thrives in the'
+      - '<gray>harshest of nether streams.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:rustfin'
+  group: 
+    - common_nether_univ
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'glowsnap':
+  display:
+    name: '<b><white>Glowsnap'
+    lore:
+      - '<gray>Emits a faint, rhythmic pulse that'
+      - '<gray>echoes through the lava tubes, guiding'
+      - '<gray>other nether life forms.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:glowsnap'
+  group: 
+    - common_nether_univ
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'glowtail':
+  display:
+    name: '<b><white>Glowtail'
+    lore:
+      - '<gray>Its vibrant tail serves as a beacon'
+      - '<gray>in the shadowy cavern depths of'
+      - '<gray>the nether wastes.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:glowtail'
+  group: 
+    - common_nether_univ
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+'spore_jelly':
+  display:
+    name: '<b><white>Spore Jelly'
+    lore:
+      - '<gray>Absorbs the floating spores of the'
+      - '<gray>Warped Forest, giving it a strange'
+      - '<gray>and ethereal teal glow.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:spore_jelly'
+  group: 
+    - common_nether_warped
+  size: 10~30
+  price:
+    base: 40
+    bonus: 1.5
+
+'bone_dart':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Bone Dart'
+    lore:
+      - '<gray>Formed from the calcified remains'
+      - '<gray>of ancient prey, it slices through'
+      - '<gray>lava with terrifying precision.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:bone_dart'
+  group: 
+    - rare_nether_soul
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'cinder_pike':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Cinder Pike'
+    lore:
+      - '<gray>A fiery predator that thrives in the'
+      - '<gray>searing heat of the lava lakes,'
+      - '<gray>unbothered by the boiling current.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:cinder_pike'
+  group: 
+    - rare_nether_univ
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'ember_carp':
+  display:
+    name: '<b><gradient:#00FFFF:#008B8B>Ember Carp'
+    lore:
+      - '<gray>A glowing variant of the common'
+      - '<gray>carp, its scales burn with an'
+      - '<gray>eternal, flickering flame.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:ember_carp'
+  group: 
+    - rare_nether_univ
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+'warped_eel':
+  display:
+    name: '<b><i><gradient:#00FFFF:#008B8B>Warped Eel'
+    lore:
+      - '<gray>An elusive hunter that weaves through'
+      - '<gray>the roots of the warped forest, its'
+      - '<gray>movements mimicking the vines.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:warped_eel'
+  group: 
+    - rare_nether_warped
+  size: 30~70
+  price:
+    base: 250
+    bonus: 5.0
+
+'ashmaw':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Ashmaw'
+    lore:
+      - '<gray>A voracious devourer of floating ash'
+      - '<gray>and nether particles, filtering the'
+      - '<gray>very air for sustenance.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:ashmaw'
+  group: 
+    - epic_nether_univ
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'soulfin':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Soulfin'
+    lore:
+      - '<gray>Its scales shimmer with the captured'
+      - '<gray>essence of lost souls, reflecting the'
+      - '<gray>ghastly blue of the soul sand valley.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:soulfin'
+  group: 
+    - epic_nether_soul
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'blightscale':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Blightscale'
+    lore:
+      - '<gray>Toughened by the harshest climates'
+      - '<gray>of the nether portals, its scales are'
+      - '<gray>impervious to extreme heat.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:blightscale'
+  group: 
+    - epic_nether_univ
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+'nether_ray':
+  display:
+    name: '<b><i><gradient:#FF4500:#8B0000>Nether Ray'
+    lore:
+      - '<gray>Gliding effortlessly through the'
+      - '<gray>scorching air above the lava, it is'
+      - '<gray>a master of nether currents.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:nether_ray'
+  group: 
+    - epic_nether_univ
+  size: 70~150
+  price:
+    base: 2000
+    bonus: 25.0
+
+'hellpuffer':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Hellpuffer'
+    lore:
+      - '<gray>Inflates with burning volcanic gases'
+      - '<gray>when threatened, becoming a floating'
+      - '<gray>sphere of pure nether heat.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:hellpuffer'
+  group: 
+    - leg_nether_hot
+  size: 150~400
+  price:
+    base: 35000
+    bonus: 175.0
+'hellstripe':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Hellstripe'
+    lore:
+      - '<gray>Patterned with the glowing veins'
+      - '<gray>of the earth, its scales pulse with'
+      - '<gray>the rhythmic beat of the nether.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:hellstripe'
+  group: 
+    - leg_nether_hot
+  size: 150~400
+  price:
+    base: 35000
+    bonus: 175.0
+'lava_lantern':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Lava Lantern'
+    lore:
+      - '<gray>The only source of light in the deepest'
+      - '<gray>lava caverns, this fish is revered by'
+      - '<gray>underground explorers.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:lava_lantern'
+  group: 
+    - leg_nether_hot
+  size: 150~400
+  price:
+    base: 35000
+    bonus: 175.0
+'magma_belly':
+  display:
+    name: '<b><i><gradient:#FFD700:#FFA500>Magma Belly'
+    lore:
+      - '<gray>Its internal core burns even hotter'
+      - '<gray>than the lava it swims in, making'
+      - '<gray>it a living piece of the nether.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:magma_belly'
+  group: 
+    - leg_nether_hot
+  size: 150~400
+  price:
+    base: 35000
+    bonus: 175.0
+
+'moltenjaw':
+  display:
+    name: '<b><i><gradient:#BF00FF:#800080>Moltenjaw'
+    lore:
+      - '<gray>A mythical beast said to be birthed'
+      - '<gray>from the very core of the world,'
+      - '<gray>possessing a bite that melts steel.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:moltenjaw'
+  group: 
+    - mythical_nether
+  size: 400~800
+
+# END
+'barreleye_fish':
+  display:
+    name: '<b><i><gradient:#BF00FF:#000000>Barreleye Fish'
+    lore:
+      - '<gray>An ethereal wonder of the void,'
+      - '<gray>it peers through its own transparent'
+      - '<gray>head to gaze at the ender stars.'
+      - '<white>Size: {size_formatted}cm'
+  material: 'ItemsAdder:fishing_expansion:barreleye_fish'
+  group: 
+    - mythical_end
+  size: 400~800

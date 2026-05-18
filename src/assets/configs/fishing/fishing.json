@@ -1,0 +1,1388 @@
+{
+  "fishes": [
+    {
+      "id": "trout",
+      "name": "Trout",
+      "lore": [
+        "Commonly found in cold, clear streams,",
+        "this fish has been a staple for local",
+        "fishermen for generations."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/trout.png"
+    },
+    {
+      "id": "sardine",
+      "name": "Sardine",
+      "lore": [
+        "Known for traveling in massive shimmering",
+        "schools, they are a vital foundation for",
+        "the entire ocean ecosystem."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/sardine.png"
+    },
+    {
+      "id": "herring",
+      "name": "Herring",
+      "lore": [
+        "Small but persistent, these fish migrate",
+        "across vast distances, often followed",
+        "by much larger predators."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/herring.png"
+    },
+    {
+      "id": "perch",
+      "name": "Perch",
+      "lore": [
+        "A hardy freshwater fish that thrives",
+        "in almost any lake environment, even",
+        "resilient to murky waters."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/perch.png"
+    },
+    {
+      "id": "carp",
+      "name": "Carp",
+      "lore": [
+        "Symbolizing resilience and bravery,",
+        "the carp is a slow but steady dweller",
+        "of calm river bends."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/carp.png"
+    },
+    {
+      "id": "snail",
+      "name": "Snail",
+      "lore": [
+        "A slow-moving mollusk that leaves",
+        "a glistening trail along the riverbeds",
+        "as it scavenges for food."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/snail.png"
+    },
+    {
+      "id": "mussel",
+      "name": "Mussel",
+      "lore": [
+        "Filter-feeders found clinging tightly to",
+        "submerged rocks, they help keep the",
+        "waters clear and pristine."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/mussel.png"
+    },
+    {
+      "id": "clam",
+      "name": "Clam",
+      "lore": [
+        "Buried deep within the sandy floors,",
+        "these silent observers of the tides",
+        "rarely leave their shells."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/clam.png"
+    },
+    {
+      "id": "amphipod",
+      "name": "Amphipod",
+      "lore": [
+        "Tiny, shrimp-like crustaceans that",
+        "skitter through the sediment, playing",
+        "a quiet role in the deep."
+      ],
+      "group": "common_ow",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "11.11%",
+      "rarityChance": "76.92%",
+      "worldChance": "8.55%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/amphipod.png"
+    },
+    {
+      "id": "pike",
+      "name": "Pike",
+      "lore": [
+        "An aggressive ambush predator known",
+        "to strike from the shadows of aquatic",
+        "vegetation with lightning speed."
+      ],
+      "group": "rare_ow",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "14.29%",
+      "rarityChance": "14.96%",
+      "worldChance": "2.14%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/pike.png"
+    },
+    {
+      "id": "lckerel",
+      "name": "Mackerel",
+      "lore": [
+        "Sleek and incredibly fast swimmers of",
+        "the open ocean, with silver scales that",
+        "glimmer like mirrors."
+      ],
+      "group": "rare_ow",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "14.29%",
+      "rarityChance": "14.96%",
+      "worldChance": "2.14%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/lckerel.png"
+    },
+    {
+      "id": "catfish",
+      "name": "Catfish",
+      "lore": [
+        "Persistent bottom dwellers that use",
+        "their sensitive whiskers to find hidden",
+        "morsels in the darkest depths."
+      ],
+      "group": "rare_ow",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "14.29%",
+      "rarityChance": "14.96%",
+      "worldChance": "2.14%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/catfish.png"
+    },
+    {
+      "id": "bass",
+      "name": "Bass",
+      "lore": [
+        "Renowned among anglers for their",
+        "fighting spirit, often found hiding",
+        "beneath lily pads and logs."
+      ],
+      "group": "rare_ow",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "14.29%",
+      "rarityChance": "14.96%",
+      "worldChance": "2.14%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/bass.png"
+    },
+    {
+      "id": "crayfish",
+      "name": "Crayfish",
+      "lore": [
+        "Small but territorial scavengers that",
+        "patrol rocky riverbeds, ever ready to",
+        "snap at anything that intrudes."
+      ],
+      "group": "rare_ow",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "14.29%",
+      "rarityChance": "14.96%",
+      "worldChance": "2.14%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/crayfish.png"
+    },
+    {
+      "id": "crab",
+      "name": "Crab",
+      "lore": [
+        "Armored walkers of the shoreline,",
+        "they scuttle sideways between tide",
+        "pools in search of treasures."
+      ],
+      "group": "rare_ow",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "14.29%",
+      "rarityChance": "14.96%",
+      "worldChance": "2.14%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/crab.png"
+    },
+    {
+      "id": "freshwater_sponge",
+      "name": "Freshwater Sponge",
+      "lore": [
+        "A primitive organism that grows in",
+        "quiet waters, filtering nutrients through",
+        "its soft, porous body."
+      ],
+      "group": "rare_ow",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "14.29%",
+      "rarityChance": "14.96%",
+      "worldChance": "2.14%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/freshwater_sponge.png"
+    },
+    {
+      "id": "trigger_fish",
+      "name": "Trigger Fish",
+      "lore": [
+        "Vibrant and defensive, it can lock its",
+        "spines to secure itself inside coral",
+        "crevices when threatened."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/trigger_fish.png"
+    },
+    {
+      "id": "surgeonfish",
+      "name": "Surgeonfish",
+      "lore": [
+        "Named for the sharp, blade-like",
+        "spines on their tails, they are the",
+        "fierce guardians of the coral reef."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/surgeonfish.png"
+    },
+    {
+      "id": "parrotfish",
+      "name": "Parrotfish",
+      "lore": [
+        "With beak-like teeth used to grind",
+        "coral into sand, they play a huge role",
+        "in shaping tropical beaches."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/parrotfish.png"
+    },
+    {
+      "id": "damsel_fish",
+      "name": "Damsel Fish",
+      "lore": [
+        "Brightly colored and highly territorial,",
+        "these small fish will bravely defend",
+        "their patch of the reef from any."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/damsel_fish.png"
+    },
+    {
+      "id": "butterflyfish",
+      "name": "Butterflyfish",
+      "lore": [
+        "Adorned with intricate, wing-like",
+        "patterns, they dance through the",
+        "coral like delicate insects."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/butterflyfish.png"
+    },
+    {
+      "id": "angelfish",
+      "name": "Angelfish",
+      "lore": [
+        "Majestic swimmers with long flowing",
+        "fins, often considered the most elegant",
+        "residents of the coral cities."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/angelfish.png"
+    },
+    {
+      "id": "snapper",
+      "name": "Snapper",
+      "lore": [
+        "Quick strikers with sharp instincts,",
+        "they are powerful hunters that roam",
+        "the reefs in organized groups."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/snapper.png"
+    },
+    {
+      "id": "grouper",
+      "name": "Grouper",
+      "lore": [
+        "Large, solitary masters of the deep",
+        "reef, they can swallow prey whole",
+        "with a single powerful gulp."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/grouper.png"
+    },
+    {
+      "id": "redfish",
+      "name": "Redfish",
+      "lore": [
+        "With scales that reflect the deep",
+        "hues of a setting sun, they are",
+        "a rare prize for any coastal angler."
+      ],
+      "group": "epic_reef",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "11.11%",
+      "rarityChance": "5.38%",
+      "worldChance": "0.60%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/redfish.png"
+    },
+    {
+      "id": "moray_eel",
+      "name": "Moray Eel",
+      "lore": [
+        "Hidden within dark crevices, they",
+        "wait patiently to strike at anything",
+        "that wanders too close to their lair."
+      ],
+      "group": "leg_reef",
+      "size": "150~400",
+      "price": {
+        "base": 20000,
+        "bonus": 100
+      },
+      "percentage": "50.00%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/moray_eel.png"
+    },
+    {
+      "id": "lion_fish",
+      "name": "Lion Fish",
+      "lore": [
+        "A beautiful but dangerously venomous",
+        "spectacle, with fan-like fins that",
+        "hide sharp, toxic needles."
+      ],
+      "group": "leg_reef",
+      "size": "150~400",
+      "price": {
+        "base": 20000,
+        "bonus": 100
+      },
+      "percentage": "50.00%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/lion_fish.png"
+    },
+    {
+      "id": "wahoo",
+      "name": "Wahoo",
+      "lore": [
+        "One of the fastest fish in the ocean,",
+        "built with a torpedo-shaped body for",
+        "extreme bursts of speed."
+      ],
+      "group": "leg_pelagic",
+      "size": "150~400",
+      "price": {
+        "base": 25000,
+        "bonus": 125
+      },
+      "percentage": "16.67%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/wahoo.png"
+    },
+    {
+      "id": "tuna",
+      "name": "Tuna",
+      "lore": [
+        "Built for relentless long-distance",
+        "travel, these tireless swimmers never",
+        "stop moving through the open blue."
+      ],
+      "group": "leg_pelagic",
+      "size": "150~400",
+      "price": {
+        "base": 25000,
+        "bonus": 125
+      },
+      "percentage": "16.67%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/tuna.png"
+    },
+    {
+      "id": "sword_fish",
+      "name": "Sword Fish",
+      "lore": [
+        "Armed with a formidable bill, they",
+        "slash through schools of prey to",
+        "stun and capture their meal."
+      ],
+      "group": "leg_pelagic",
+      "size": "150~400",
+      "price": {
+        "base": 25000,
+        "bonus": 125
+      },
+      "percentage": "16.67%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/sword_fish.png"
+    },
+    {
+      "id": "snook",
+      "name": "Snook",
+      "lore": [
+        "An elusive prize of the coastal",
+        "mangroves, known for their",
+        "intelligence and powerful runs."
+      ],
+      "group": "leg_pelagic",
+      "size": "150~400",
+      "price": {
+        "base": 25000,
+        "bonus": 125
+      },
+      "percentage": "16.67%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/snook.png"
+    },
+    {
+      "id": "marlin",
+      "name": "Marlin",
+      "lore": [
+        "The ultimate peak of pelagic endurance,",
+        "famed for their acrobatic leaps when",
+        "hooked by the bravest of sailors."
+      ],
+      "group": "leg_pelagic",
+      "size": "150~400",
+      "price": {
+        "base": 25000,
+        "bonus": 125
+      },
+      "percentage": "16.67%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/marlin.png"
+    },
+    {
+      "id": "barracuda",
+      "name": "Barracuda",
+      "lore": [
+        "A fierce predator with jagged teeth,",
+        "known to follow shiny objects through",
+        "the water with intense curiosity."
+      ],
+      "group": "leg_pelagic",
+      "size": "150~400",
+      "price": {
+        "base": 25000,
+        "bonus": 125
+      },
+      "percentage": "16.67%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/barracuda.png"
+    },
+    {
+      "id": "viper_fish",
+      "name": "Viper Fish",
+      "lore": [
+        "A terrifying sight from the abyss,",
+        "with teeth so large they don't even",
+        "fit inside its own mouth."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/viper_fish.png"
+    },
+    {
+      "id": "vampire_squid",
+      "name": "Vampire Squid",
+      "lore": [
+        "Named for its dark, cloak-like cape,",
+        "it drifts through the oxygen-depleted",
+        "depths where few others can survive."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/vampire_squid.png"
+    },
+    {
+      "id": "lanternfish",
+      "name": "Lanternfish",
+      "lore": [
+        "Guiding light of the crushing deep,",
+        "its bioluminescence serves as both",
+        "a lure and a warning to others."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/lanternfish.png"
+    },
+    {
+      "id": "gulper_eel",
+      "name": "Gulper Eel",
+      "lore": [
+        "Equipped with a massive, hinged jaw,",
+        "it can swallow creatures much larger",
+        "than itself in the eternal darkness."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/gulper_eel.png"
+    },
+    {
+      "id": "giant_isopod",
+      "name": "Giant Isopod",
+      "lore": [
+        "Ancient scavengers of the seafloor,",
+        "these armored giants have remained",
+        "unchanged for millions of years."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/giant_isopod.png"
+    },
+    {
+      "id": "dumbo_octopus",
+      "name": "Dumbo Octopus",
+      "lore": [
+        "Graceful fins that look like ears",
+        "allow this deep-sea cephalopod to",
+        "flap elegantly through the abyss."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/dumbo_octopus.png"
+    },
+    {
+      "id": "dragon_fish",
+      "name": "Dragon Fish",
+      "lore": [
+        "A bioluminescent hunter that uses",
+        "a glowing barbel to trick unsuspecting",
+        "prey into its waiting maw."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/dragon_fish.png"
+    },
+    {
+      "id": "blobfish",
+      "name": "Blobfish",
+      "lore": [
+        "Perfectly adapted to the crushing",
+        "pressure of the depths, it looks quite",
+        "different in its natural habitat."
+      ],
+      "group": "leg_deep",
+      "size": "150~400",
+      "price": {
+        "base": 30000,
+        "bonus": 150
+      },
+      "percentage": "12.50%",
+      "rarityChance": "2.73%",
+      "worldChance": "0.17%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/blobfish.png"
+    },
+    {
+      "id": "anglerfish",
+      "name": "Anglerfish",
+      "lore": [
+        "A mythical nightmare of the abyss,",
+        "luring the curious with a light that",
+        "shines like a misplaced star."
+      ],
+      "group": "mythical_ow",
+      "size": "400~800",
+      "price": {
+        "base": 0,
+        "bonus": 0
+      },
+      "percentage": "100.00%",
+      "rarityChance": "0.01%",
+      "worldChance": "0.01%",
+      "world": "Overworld",
+      "image": "/src/assets/images/fishing/anglerfish.png"
+    },
+    {
+      "id": "rustfin",
+      "name": "Rustfin",
+      "lore": [
+        "With scales hardened by volcanic ash",
+        "and iron sediment, it thrives in the",
+        "harshest of nether streams."
+      ],
+      "group": "common_nether_univ",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "33.33%",
+      "rarityChance": "74.61%",
+      "worldChance": "18.65%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/rustfin.png"
+    },
+    {
+      "id": "glowsnap",
+      "name": "Glowsnap",
+      "lore": [
+        "Emits a faint, rhythmic pulse that",
+        "echoes through the lava tubes, guiding",
+        "other nether life forms."
+      ],
+      "group": "common_nether_univ",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "33.33%",
+      "rarityChance": "74.61%",
+      "worldChance": "18.65%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/glowsnap.png"
+    },
+    {
+      "id": "glowtail",
+      "name": "Glowtail",
+      "lore": [
+        "Its vibrant tail serves as a beacon",
+        "in the shadowy cavern depths of",
+        "the nether wastes."
+      ],
+      "group": "common_nether_univ",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "33.33%",
+      "rarityChance": "74.61%",
+      "worldChance": "18.65%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/glowtail.png"
+    },
+    {
+      "id": "spore_jelly",
+      "name": "Spore Jelly",
+      "lore": [
+        "Absorbs the floating spores of the",
+        "Warped Forest, giving it a strange",
+        "and ethereal teal glow."
+      ],
+      "group": "common_nether_warped",
+      "size": "10~30",
+      "price": {
+        "base": 40,
+        "bonus": 1.5
+      },
+      "percentage": "100.00%",
+      "rarityChance": "74.61%",
+      "worldChance": "18.65%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/spore_jelly.png"
+    },
+    {
+      "id": "bone_dart",
+      "name": "Bone Dart",
+      "lore": [
+        "Formed from the calcified remains",
+        "of ancient prey, it slices through",
+        "lava with terrifying precision."
+      ],
+      "group": "rare_nether_soul",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "100.00%",
+      "rarityChance": "18.65%",
+      "worldChance": "4.66%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/bone_dart.png"
+    },
+    {
+      "id": "cinder_pike",
+      "name": "Cinder Pike",
+      "lore": [
+        "A fiery predator that thrives in the",
+        "searing heat of the lava lakes,",
+        "unbothered by the boiling current."
+      ],
+      "group": "rare_nether_univ",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "50.00%",
+      "rarityChance": "18.65%",
+      "worldChance": "4.66%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/cinder_pike.png"
+    },
+    {
+      "id": "ember_carp",
+      "name": "Ember Carp",
+      "lore": [
+        "A glowing variant of the common",
+        "carp, its scales burn with an",
+        "eternal, flickering flame."
+      ],
+      "group": "rare_nether_univ",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "50.00%",
+      "rarityChance": "18.65%",
+      "worldChance": "4.66%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/ember_carp.png"
+    },
+    {
+      "id": "warped_eel",
+      "name": "Warped Eel",
+      "lore": [
+        "An elusive hunter that weaves through",
+        "the roots of the warped forest, its",
+        "movements mimicking the vines."
+      ],
+      "group": "rare_nether_warped",
+      "size": "30~70",
+      "price": {
+        "base": 250,
+        "bonus": 5
+      },
+      "percentage": "100.00%",
+      "rarityChance": "18.65%",
+      "worldChance": "4.66%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/warped_eel.png"
+    },
+    {
+      "id": "ashmaw",
+      "name": "Ashmaw",
+      "lore": [
+        "A voracious devourer of floating ash",
+        "and nether particles, filtering the",
+        "very air for sustenance."
+      ],
+      "group": "epic_nether_univ",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "33.33%",
+      "rarityChance": "5.22%",
+      "worldChance": "1.31%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/ashmaw.png"
+    },
+    {
+      "id": "soulfin",
+      "name": "Soulfin",
+      "lore": [
+        "Its scales shimmer with the captured",
+        "essence of lost souls, reflecting the",
+        "ghastly blue of the soul sand valley."
+      ],
+      "group": "epic_nether_soul",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "100.00%",
+      "rarityChance": "5.22%",
+      "worldChance": "1.31%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/soulfin.png"
+    },
+    {
+      "id": "blightscale",
+      "name": "Blightscale",
+      "lore": [
+        "Toughened by the harshest climates",
+        "of the nether portals, its scales are",
+        "impervious to extreme heat."
+      ],
+      "group": "epic_nether_univ",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "33.33%",
+      "rarityChance": "5.22%",
+      "worldChance": "1.31%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/blightscale.png"
+    },
+    {
+      "id": "nether_ray",
+      "name": "Nether Ray",
+      "lore": [
+        "Gliding effortlessly through the",
+        "scorching air above the lava, it is",
+        "a master of nether currents."
+      ],
+      "group": "epic_nether_univ",
+      "size": "70~150",
+      "price": {
+        "base": 2000,
+        "bonus": 25
+      },
+      "percentage": "33.33%",
+      "rarityChance": "5.22%",
+      "worldChance": "1.31%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/nether_ray.png"
+    },
+    {
+      "id": "hellpuffer",
+      "name": "Hellpuffer",
+      "lore": [
+        "Inflates with burning volcanic gases",
+        "when threatened, becoming a floating",
+        "sphere of pure nether heat."
+      ],
+      "group": "leg_nether_hot",
+      "size": "150~400",
+      "price": {
+        "base": 35000,
+        "bonus": 175
+      },
+      "percentage": "25.00%",
+      "rarityChance": "1.49%",
+      "worldChance": "0.37%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/hellpuffer.png"
+    },
+    {
+      "id": "hellstripe",
+      "name": "Hellstripe",
+      "lore": [
+        "Patterned with the glowing veins",
+        "of the earth, its scales pulse with",
+        "the rhythmic beat of the nether."
+      ],
+      "group": "leg_nether_hot",
+      "size": "150~400",
+      "price": {
+        "base": 35000,
+        "bonus": 175
+      },
+      "percentage": "25.00%",
+      "rarityChance": "1.49%",
+      "worldChance": "0.37%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/hellstripe.png"
+    },
+    {
+      "id": "lava_lantern",
+      "name": "Lava Lantern",
+      "lore": [
+        "The only source of light in the deepest",
+        "lava caverns, this fish is revered by",
+        "underground explorers."
+      ],
+      "group": "leg_nether_hot",
+      "size": "150~400",
+      "price": {
+        "base": 35000,
+        "bonus": 175
+      },
+      "percentage": "25.00%",
+      "rarityChance": "1.49%",
+      "worldChance": "0.37%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/lava_lantern.png"
+    },
+    {
+      "id": "magma_belly",
+      "name": "Magma Belly",
+      "lore": [
+        "Its internal core burns even hotter",
+        "than the lava it swims in, making",
+        "it a living piece of the nether."
+      ],
+      "group": "leg_nether_hot",
+      "size": "150~400",
+      "price": {
+        "base": 35000,
+        "bonus": 175
+      },
+      "percentage": "25.00%",
+      "rarityChance": "1.49%",
+      "worldChance": "0.37%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/magma_belly.png"
+    },
+    {
+      "id": "moltenjaw",
+      "name": "Moltenjaw",
+      "lore": [
+        "A mythical beast said to be birthed",
+        "from the very core of the world,",
+        "possessing a bite that melts steel."
+      ],
+      "group": "mythical_nether",
+      "size": "400~800",
+      "price": {
+        "base": 0,
+        "bonus": 0
+      },
+      "percentage": "100.00%",
+      "rarityChance": "0.02%",
+      "worldChance": "0.02%",
+      "world": "Nether",
+      "image": "/src/assets/images/fishing/moltenjaw.png"
+    },
+    {
+      "id": "barreleye_fish",
+      "name": "Barreleye Fish",
+      "lore": [
+        "An ethereal wonder of the void,",
+        "it peers through its own transparent",
+        "head to gaze at the ender stars."
+      ],
+      "group": "mythical_end",
+      "size": "400~800",
+      "price": {
+        "base": 0,
+        "bonus": 0
+      },
+      "percentage": "100.00%",
+      "rarityChance": "100.00%",
+      "worldChance": "100.00%",
+      "world": "The End",
+      "image": "/src/assets/images/fishing/barreleye_fish.png"
+    }
+  ],
+  "baits": [
+    {
+      "id": "nautilus_bait",
+      "name": "Nautilus Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/nautilus_bait.png"
+    },
+    {
+      "id": "bobber_bait",
+      "name": "Bobber Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/bobber_bait.png"
+    },
+    {
+      "id": "ender_bait",
+      "name": "Ender Bait",
+      "maxBaits": 1,
+      "image": "/src/assets/images/fishing/ender_bait.png"
+    },
+    {
+      "id": "iridescent_bait",
+      "name": "Iridescent Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/iridescent_bait.png"
+    },
+    {
+      "id": "sea_heart_bait",
+      "name": "Sea Heart Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/sea_heart_bait.png"
+    },
+    {
+      "id": "gelatin_bait",
+      "name": "Gelatin Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/gelatin_bait.png"
+    },
+    {
+      "id": "copper_bait",
+      "name": "Copper Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/copper_bait.png"
+    },
+    {
+      "id": "trident_bait",
+      "name": "Trident Bait",
+      "maxBaits": 3,
+      "image": "/src/assets/images/fishing/trident_bait.png"
+    },
+    {
+      "id": "slime_bait",
+      "name": "Slime Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/slime_bait.png"
+    },
+    {
+      "id": "magma_bait",
+      "name": "Magma Bait",
+      "maxBaits": -1,
+      "image": "/src/assets/images/fishing/magma_bait.png"
+    }
+  ],
+  "rods": [
+    {
+      "id": "copper_fishing_rod",
+      "name": "Copper Fishing Rod",
+      "lore": [
+        "A reliable starter rod with a sturdy grip.",
+        "⬆ Common (+15)",
+        "⬆ Rare (+5)"
+      ],
+      "maxDurability": 100,
+      "effects": [
+        {
+          "type": "wait-time-multiplier",
+          "value": 1.7
+        },
+        {
+          "type": "difficulty",
+          "value": -2
+        }
+      ],
+      "image": "/src/assets/images/fishing/copper_fishing_rod.png"
+    },
+    {
+      "id": "iron_fishing_rod",
+      "name": "Iron Fishing Rod",
+      "lore": [
+        "Well-balanced rod that attracts finer catches.",
+        "⬇ Common (-10)",
+        "⬆ Rare (+20)"
+      ],
+      "maxDurability": 250,
+      "effects": [
+        {
+          "type": "wait-time-multiplier",
+          "value": 1.5
+        },
+        {
+          "type": "difficulty",
+          "value": -4
+        }
+      ],
+      "image": "/src/assets/images/fishing/iron_fishing_rod.png"
+    },
+    {
+      "id": "golden_fishing_rod",
+      "name": "Golden Fishing Rod",
+      "lore": [
+        "A gilded rod that withstands intense heat.",
+        "Can be used for fishing in the lava",
+        "⬇ Nether Common (-10)",
+        "⬆ Nether Rare (+20)"
+      ],
+      "maxDurability": 85,
+      "effects": [
+        {
+          "type": "wait-time-multiplier",
+          "value": 1.3
+        },
+        {
+          "type": "lava-fishing"
+        },
+        {
+          "type": "difficulty",
+          "value": -6
+        }
+      ],
+      "image": "/src/assets/images/fishing/golden_fishing_rod.png"
+    },
+    {
+      "id": "diamond_fishing_rod",
+      "name": "Diamond Fishing Rod",
+      "lore": [
+        "An exquisite rod meant for prized treasures.",
+        "Can be used for fishing in the lava",
+        "⬇ Common (-15)",
+        "⬆ Rare (+10)",
+        "⬆ Epic (+20)"
+      ],
+      "maxDurability": 500,
+      "effects": [
+        {
+          "type": "wait-time-multiplier",
+          "value": 1.1
+        },
+        {
+          "type": "difficulty",
+          "value": -8
+        },
+        {
+          "type": "lava-fishing"
+        }
+      ],
+      "image": "/src/assets/images/fishing/diamond_fishing_rod.png"
+    },
+    {
+      "id": "netherite_fishing_rod",
+      "name": "Netherite Fishing Rod",
+      "lore": [
+        "A legendary rod of unparalleled strength.",
+        "Can be used for fishing in the lava",
+        "⬇ Rare (-10)",
+        "⬆ Epic (+10)",
+        "⬆ Legendary (+20)",
+        "⬆ Mythic (+10)"
+      ],
+      "maxDurability": 750,
+      "effects": [
+        {
+          "type": "wait-time-multiplier",
+          "value": 1
+        },
+        {
+          "type": "difficulty",
+          "value": -10
+        },
+        {
+          "type": "lava-fishing"
+        }
+      ],
+      "image": "/src/assets/images/fishing/netherite_fishing_rod.png"
+    }
+  ]
+}

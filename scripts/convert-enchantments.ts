@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import yaml from 'yaml';
 
-const ymlPath = path.resolve('./src/assets/configs/enchantments.yml');
-const jsonPath = path.resolve('./src/assets/configs/enchantments.json');
+const ymlPath = path.resolve('./src/assets/configs/enchantments/enchantments.yml');
+const jsonPath = path.resolve('./src/assets/configs/enchantments/enchantments.json');
 
 const content = fs.readFileSync(ymlPath, 'utf8');
 const parsed = yaml.parse(content);
