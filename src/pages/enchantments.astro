@@ -1,0 +1,150 @@
+---
+import Layout from "../layouts/Layout.astro";
+import enchantmentsData from "../assets/configs/enchantments.json";
+
+// Map groups to colors based on user provided data
+const groupColors: Record<string, string> = {
+  SIMPLE: "rgb(200, 200, 200)",
+  UNIQUE: "rgb(122, 255, 80)",
+  ELITE: "rgb(20, 250, 255)",
+  ULTIMATE: "rgb(250, 255, 0)",
+  LEGENDARY: "rgb(255, 170, 0)",
+  FABLED: "rgb(133, 50, 168)",
+  HEROIC: "rgb(255, 0, 0)",
+};
+
+const groupGradientEndColors: Record<string, string> = {
+  LEGENDARY: "rgb(255, 220, 100)", // Lighter gold
+  FABLED: "rgb(210, 120, 255)",    // Lighter purple
+  HEROIC: "rgb(255, 120, 120)",    // Light red
+};
+
+const groupWeights: Record<string, number> = {
+  SIMPLE: 1,
+  UNIQUE: 2,
+  ELITE: 3,
+  ULTIMATE: 4,
+  LEGENDARY: 5,
+  FABLED: 6,
+  HEROIC: 7,
+};
+
+// Convert object to array and sort
+const enchantmentsList = Object.values(enchantmentsData).sort((a, b) => {
+  // Sort by rarity first
+  const weightA = groupWeights[a.group] || 0;
+  const weightB = groupWeights[b.group] || 0;
+  if (weightA !== weightB) {
+    return weightB - weightA; // Descending rarity
+  }
+  // Then alphabetically
+  return a.display.localeCompare(b.display);
+});
+
+const groups = ["ALL", "SIMPLE", "UNIQUE", "ELITE", "ULTIMATE", "LEGENDARY", "FABLED", "HEROIC"];
+---
+
+<Layout>
+  <main class="min-h-screen bg-slate-950 pt-24 px-6 pb-12 flex flex-col items-center">
+    <div class="max-w-6xl w-full">
+      <!-- Tabs -->
+      <div class="flex border-b border-purple-500/30 mb-8">
+        <button class="px-6 py-3 font-orbitron text-sm font-semibold uppercase tracking-wider text-purple-300 border-b-2 border-purple-400 bg-purple-400/10 transition-all">
+          Enchantments List
+        </button>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex flex-wrap gap-3 mb-8">
+        {groups.map((group) => (
+          <button
+            class="filter-btn px-4 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest border transition-all duration-300 cursor-pointer"
+            data-group={group}
+            style={group === "ALL" 
+              ? "border-color: rgba(191,0,255,0.5); color: #d8b4fe;" 
+              : `border-color: ${groupColors[group]}; color: ${groupColors[group]};`}
+          >
+            {group}
+          </button>
+        ))}
+      </div>
+
+      <!-- Enchantments Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="enchantments-grid">
+        {enchantmentsList.map((ench) => (
+          <div 
+            class="enchantment-card glass-panel rounded-xl p-6 border transition-all duration-300 hover:scale-[1.02]"
+            data-group={ench.group}
+            style={`border-color: ${groupColors[ench.group]}40; background: linear-gradient(135deg, rgba(3,7,18,0.8) 0%, ${groupColors[ench.group]}10 100%); box-shadow: 0 4px 20px ${groupColors[ench.group]}10;`}
+          >
+            <div class="flex justify-between items-start mb-4">
+              <h3 
+                class={`font-orbitron text-xl font-bold tracking-wide ${groupWeights[ench.group] >= 5 ? 'text-transparent bg-clip-text' : ''}`} 
+                style={groupWeights[ench.group] >= 5 
+                  ? `background-image: linear-gradient(to bottom right, ${groupColors[ench.group]}, ${groupGradientEndColors[ench.group] || '#ffffff'}); text-shadow: 0 0 15px ${groupColors[ench.group]}40;`
+                  : `color: ${groupColors[ench.group]}; text-shadow: 0 0 10px ${groupColors[ench.group]}80;`}
+              >
+                {ench.display}
+              </h3>
+              <span class="text-xs font-bold px-2 py-1 rounded" style={`background: ${groupColors[ench.group]}20; color: ${groupColors[ench.group]};`}>
+                Max Lvl {ench.maxLevel}
+              </span>
+            </div>
+            
+            <p class="text-slate-300 text-sm mb-4 min-h-[40px]">
+              {ench.description}
+            </p>
+            
+            <div class="flex items-center gap-2 mt-auto pt-4 border-t border-slate-700/50">
+              <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Applies to:</span>
+              <span class="text-sm text-slate-400">{ench.appliesTo}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.enchantment-card');
+  let currentFilter = 'ALL';
+
+  function updateFilterUI() {
+    filterBtns.forEach(btn => {
+      const group = btn.getAttribute('data-group');
+      if (group === currentFilter) {
+        btn.classList.add('bg-opacity-20');
+        // Add a class that will be matched to the style color for background using a trick or just use style manipulation
+        btn.style.backgroundColor = btn.style.color.replace('rgb', 'rgba').replace(')', ', 0.15)');
+        btn.style.boxShadow = `0 0 12px ${btn.style.color.replace('rgb', 'rgba').replace(')', ', 0.3)')}`;
+      } else {
+        btn.style.backgroundColor = 'transparent';
+        btn.style.boxShadow = 'none';
+      }
+    });
+  }
+
+  function filterCards() {
+    cards.forEach(card => {
+      const el = card as HTMLElement;
+      if (currentFilter === 'ALL' || el.getAttribute('data-group') === currentFilter) {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentFilter = btn.getAttribute('data-group') || 'ALL';
+      updateFilterUI();
+      filterCards();
+    });
+  });
+
+  // Initialize
+  updateFilterUI();
+</script>

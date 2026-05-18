@@ -5,20 +5,23 @@ import {
   faMap,
   faBars,
   faTimes,
+  faBook,
 } from "@fortawesome/free-solid-svg-icons";
 import iconText from "../assets/images/icon-text.webp";
 
-library.add(faHouse, faMap, faBars, faTimes);
+library.add(faHouse, faMap, faBars, faTimes, faBook);
 
 const homeIcon = icon(faHouse).html[0];
 const mapIcon = icon(faMap).html[0];
 const barsIcon = icon(faBars).html[0];
+const bookIcon = icon(faBook).html[0];
 
 const { pathname } = Astro.url;
 const currentPath = pathname.replace(/\/$/, "") || "/";
 
 const isHomeActive = currentPath === "/";
 const isMapActive = currentPath === "/map";
+const isEnchantmentsActive = currentPath === "/enchantments";
 ---
 
 <nav
@@ -84,6 +87,22 @@ const isMapActive = currentPath === "/map";
         Live Map
       </a>
     </li>
+    <li>
+      <a
+        href="/enchantments"
+        id="nav-enchantments"
+        class={`nav-link flex items-center gap-2 px-5 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
+          isEnchantmentsActive
+            ? "text-pink-300 bg-pink-400/10 border border-pink-400/50 shadow-[0_0_16px_rgba(244,114,182,0.3)]"
+            : "text-slate-400 border border-transparent hover:text-pink-300 hover:border-pink-400/30 hover:bg-pink-400/05 hover:shadow-[0_0_12px_rgba(244,114,182,0.15)]"
+        }`}
+      >
+        <span
+          class="w-4 h-4 flex items-center justify-center"
+          set:html={bookIcon}></span>
+        Enchantments
+      </a>
+    </li>
   </ul>
 
   <!-- Mobile burger -->
@@ -132,6 +151,21 @@ const isMapActive = currentPath === "/map";
           class="w-5 h-5 flex items-center justify-center"
           set:html={mapIcon}></span>
         Live Map
+      </a>
+    </li>
+    <li>
+      <a
+        href="/enchantments"
+        class={`flex items-center gap-3 px-4 py-3 rounded-lg font-orbitron text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
+          isEnchantmentsActive
+            ? "text-pink-300 bg-pink-400/10 border border-pink-400/40 shadow-[0_0_12px_rgba(244,114,182,0.2)]"
+            : "text-slate-400 border border-transparent hover:text-pink-300 hover:border-pink-400/30 hover:bg-pink-400/05"
+        }`}
+      >
+        <span
+          class="w-5 h-5 flex items-center justify-center"
+          set:html={bookIcon}></span>
+        Enchantments
       </a>
     </li>
   </ul>

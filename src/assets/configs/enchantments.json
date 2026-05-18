@@ -1,0 +1,826 @@
+{
+  "tidal": {
+    "id": "tidal",
+    "display": "Tidal",
+    "description": "Grants resilience and power while holding the trident.",
+    "appliesTo": "Trident",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "spike": {
+    "id": "spike",
+    "display": "Spike",
+    "description": "Reflects damage back while blocking.",
+    "appliesTo": "Shield",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "bulwark": {
+    "id": "bulwark",
+    "display": "Bulk",
+    "description": "Grants immense resistance while holding a shield.",
+    "appliesTo": "Shield",
+    "group": "ULTIMATE",
+    "maxLevel": 1
+  },
+  "mobkiller": {
+    "id": "mobkiller",
+    "display": "Mob Killer",
+    "description": "Deals massive bonus damage to all types of mobs.",
+    "appliesTo": "Sword",
+    "group": "UNIQUE",
+    "maxLevel": 5
+  },
+  "scythe": {
+    "id": "scythe",
+    "display": "Scythe",
+    "description": "Turns your hoe into a deadly weapon capable of massive damage.",
+    "appliesTo": "Hoe",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "blazeburst": {
+    "id": "blazeburst",
+    "display": "Blaze Burst",
+    "description": "Right click your sword to launch a deadly fireball.",
+    "appliesTo": "Sword",
+    "group": "HEROIC",
+    "maxLevel": 1
+  },
+  "witherburst": {
+    "id": "witherburst",
+    "display": "Death Wave",
+    "description": "Right click to infect nearby enemies with Wither.",
+    "appliesTo": "Sword",
+    "group": "HEROIC",
+    "maxLevel": 1
+  },
+  "stormcaller": {
+    "id": "stormcaller",
+    "display": "Stormcaller",
+    "description": "Attack to summon a deadly lightning strike.",
+    "appliesTo": "Trident",
+    "group": "HEROIC",
+    "maxLevel": 1
+  },
+  "skybreaker": {
+    "id": "skybreaker",
+    "display": "Sky Breaker",
+    "description": "Right click to launch yourself high into the air.",
+    "appliesTo": "Mace",
+    "group": "HEROIC",
+    "maxLevel": 1
+  },
+  "fortress": {
+    "id": "fortress",
+    "display": "Fortress",
+    "description": "Right click to gain an immense defensive shield.",
+    "appliesTo": "Shield",
+    "group": "HEROIC",
+    "maxLevel": 1
+  },
+  "grimreaper": {
+    "id": "grimreaper",
+    "display": "Grim Reaper",
+    "description": "Right click to become an unstoppable shadow of death.",
+    "appliesTo": "Hoe",
+    "group": "HEROIC",
+    "maxLevel": 1
+  },
+  "strike": {
+    "id": "strike",
+    "display": "Strike",
+    "description": "Chance to strike lightning at the opponent.",
+    "appliesTo": "Swords, Bow, Crossbow, Trident",
+    "group": "SIMPLE",
+    "maxLevel": 3
+  },
+  "impact": {
+    "id": "impact",
+    "display": "Impact",
+    "description": "Chance to double dealt damage.",
+    "appliesTo": "Trident",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "twinge": {
+    "id": "twinge",
+    "display": "Twinge",
+    "description": "Make your enemy bleed, if hit using melee attack.",
+    "appliesTo": "Trident",
+    "group": "LEGENDARY",
+    "maxLevel": 4
+  },
+  "jellylegs": {
+    "id": "jellylegs",
+    "display": "Jelly Legs",
+    "description": "Chance to negate fall damage.",
+    "appliesTo": "Boots",
+    "group": "ULTIMATE",
+    "maxLevel": 3
+  },
+  "aquatic": {
+    "id": "aquatic",
+    "display": "Aquatic",
+    "description": "Breathe underwater.",
+    "appliesTo": "Helmets",
+    "group": "SIMPLE",
+    "maxLevel": 1
+  },
+  "smelting": {
+    "id": "smelting",
+    "display": "Smelting",
+    "description": "Chance to smelt mined blocks.",
+    "appliesTo": "Pickaxes",
+    "group": "SIMPLE",
+    "maxLevel": 3
+  },
+  "experience": {
+    "id": "experience",
+    "display": "Experience",
+    "description": "Chance to get more experience from ores.",
+    "appliesTo": "Tools",
+    "group": "SIMPLE",
+    "maxLevel": 5
+  },
+  "haste": {
+    "id": "haste",
+    "display": "Haste",
+    "description": "Allows you to swing your tools faster.",
+    "appliesTo": "Tools",
+    "group": "FABLED",
+    "maxLevel": 3
+  },
+  "glowing": {
+    "id": "glowing",
+    "display": "Glowing",
+    "description": "Gives permanent night vision.",
+    "appliesTo": "Helmet",
+    "group": "SIMPLE",
+    "maxLevel": 1
+  },
+  "reflect": {
+    "id": "reflect",
+    "display": "Reflect",
+    "description": "Absorb enemy damage and reflect it back.",
+    "appliesTo": "Armor",
+    "group": "UNIQUE",
+    "maxLevel": 5
+  },
+  "ward": {
+    "id": "ward",
+    "display": "Ward",
+    "description": "A chance to absorb enemy damage",
+    "appliesTo": "Armor, Helmets",
+    "group": "UNIQUE",
+    "maxLevel": 4
+  },
+  "explosive": {
+    "id": "explosive",
+    "display": "Explosive",
+    "description": "Chance for arrows to explode.",
+    "appliesTo": "Bow",
+    "group": "UNIQUE",
+    "maxLevel": 5
+  },
+  "frenzy": {
+    "id": "frenzy",
+    "display": "Frenzy",
+    "description": "Chance for arrows to explode.",
+    "appliesTo": "Crossbow",
+    "group": "UNIQUE",
+    "maxLevel": 5
+  },
+  "featherweight": {
+    "id": "featherweight",
+    "display": "Featherweight",
+    "description": "Chance to get a burst of haste.",
+    "appliesTo": "Swords, Axes",
+    "group": "UNIQUE",
+    "maxLevel": 3
+  },
+  "molten": {
+    "id": "molten",
+    "display": "Molten",
+    "description": "Chance of setting your attacker ablaze.",
+    "appliesTo": "Armor, Helmets",
+    "group": "UNIQUE",
+    "maxLevel": 4
+  },
+  "ravenous": {
+    "id": "ravenous",
+    "display": "Ravenous",
+    "description": "Chance to regain hunger while fighting.",
+    "appliesTo": "Swords, Axes",
+    "group": "UNIQUE",
+    "maxLevel": 4
+  },
+  "permafrost": {
+    "id": "permafrost",
+    "display": "Permafrost",
+    "description": "Chance slow and bleed opponents.",
+    "appliesTo": "Swords",
+    "group": "ULTIMATE",
+    "maxLevel": 5
+  },
+  "blind": {
+    "id": "blind",
+    "display": "Blind",
+    "description": "A chance of causing blindness when attacking.",
+    "appliesTo": "Swords",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "frozen": {
+    "id": "frozen",
+    "display": "Frozen",
+    "description": "Can cause slowness to attacker when defending.",
+    "appliesTo": "Armor, Helmets",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "paralyze": {
+    "id": "paralyze",
+    "display": "Paralyze",
+    "description": "Gives lightning effect and a chance for slowness and slow swinging.",
+    "appliesTo": "Swords, Axes",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "poison": {
+    "id": "poison",
+    "display": "Poison",
+    "description": "A chance of giving poison effect.",
+    "appliesTo": "Swords, Axes, Hoe",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "virus": {
+    "id": "virus",
+    "display": "Virus",
+    "description": "A chance of giving poison effect.",
+    "appliesTo": "Bow, Crossbow, Trident",
+    "group": "UNIQUE",
+    "maxLevel": 3
+  },
+  "reforged": {
+    "id": "reforged",
+    "display": "Reforged",
+    "description": "Protects weapons and tools durability, items will be take longer to break.",
+    "appliesTo": "Weapons and tools",
+    "group": "ELITE",
+    "maxLevel": 10
+  },
+  "snare": {
+    "id": "snare",
+    "display": "Snare",
+    "description": "Chance to slow and fatigue enemies with projectiles.",
+    "appliesTo": "Bows",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "springs": {
+    "id": "springs",
+    "display": "Springs",
+    "description": "Gives jump boost.",
+    "appliesTo": "Boots",
+    "group": "ELITE",
+    "maxLevel": 2
+  },
+  "wither": {
+    "id": "wither",
+    "display": "Wither",
+    "description": "A chance to give the wither effect.",
+    "appliesTo": "Armor",
+    "group": "ELITE",
+    "maxLevel": 5
+  },
+  "perish": {
+    "id": "perish",
+    "display": "Perish",
+    "description": "A chance to give the wither effect.",
+    "appliesTo": "Bow, Crossbow, Trident",
+    "group": "UNIQUE",
+    "maxLevel": 5
+  },
+  "vampire": {
+    "id": "vampire",
+    "display": "Vampire",
+    "description": "A chance to heal you for up to 3hp a few seconds after you strike.",
+    "appliesTo": "Swords, axes, hoes",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "greatsword": {
+    "id": "greatsword",
+    "display": "Greatsword",
+    "description": "Multiplies damage against players but getting a mining fatigue effect.",
+    "appliesTo": "Sword",
+    "group": "ELITE",
+    "maxLevel": 5
+  },
+  "bowmaster": {
+    "id": "bowmaster",
+    "display": "Bowmaster",
+    "description": "Multiplies damage with bows, crossbows, and tridents.",
+    "appliesTo": "Bow, Crossbow, Trident",
+    "group": "ELITE",
+    "maxLevel": 5
+  },
+  "hardened": {
+    "id": "hardened",
+    "display": "Hardened",
+    "description": "Chance to recover durability when damaged by players.",
+    "appliesTo": "Armor, Helmets",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "patch": {
+    "id": "patch",
+    "display": "Patch",
+    "description": "Chance to recover durability when damaged by mobs.",
+    "appliesTo": "Armor",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "trickster": {
+    "id": "trickster",
+    "display": "Trickster",
+    "description": "When hit you have a chance to teleport directly behind you opponent.",
+    "appliesTo": "Armor",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "cleave": {
+    "id": "cleave",
+    "display": "Cleave",
+    "description": "Damages players within a radius that increases with the level of enchant.",
+    "appliesTo": "Axes",
+    "group": "ULTIMATE",
+    "maxLevel": 4
+  },
+  "ambit": {
+    "id": "ambit",
+    "display": "Ambit",
+    "description": "Damages mobs within a radius that increases with the level of enchant.",
+    "appliesTo": "Swords, Axes",
+    "group": "ULTIMATE",
+    "maxLevel": 7
+  },
+  "angelic": {
+    "id": "angelic",
+    "display": "Angelic",
+    "description": "Heals when damaged.",
+    "appliesTo": "Armor",
+    "group": "ULTIMATE",
+    "maxLevel": 5
+  },
+  "arrowdeflect": {
+    "id": "arrowdeflect",
+    "display": "Arrow Deflect",
+    "description": "Chance to prevent enemy arrow from dealing damage.",
+    "appliesTo": "Armor",
+    "group": "ULTIMATE",
+    "maxLevel": 4
+  },
+  "curse": {
+    "id": "curse",
+    "display": "Curse",
+    "description": "Chance to give your enemy mining fatigue.",
+    "appliesTo": "Armor",
+    "group": "ELITE",
+    "maxLevel": 2
+  },
+  "diminish": {
+    "id": "diminish",
+    "display": "Diminish",
+    "description": "Chance to give your enemy mining fatigue.",
+    "appliesTo": "Axes",
+    "group": "ULTIMATE",
+    "maxLevel": 1
+  },
+  "interrupt": {
+    "id": "interrupt",
+    "display": "Interrupt",
+    "description": "Chance to give your enemy mining fatigue.",
+    "appliesTo": "Swords",
+    "group": "ULTIMATE",
+    "maxLevel": 2
+  },
+  "trench": {
+    "id": "trench",
+    "display": "Trench",
+    "description": "Chance to break in 3x3 area.",
+    "appliesTo": "Pickaxes, Shovels",
+    "group": "ULTIMATE",
+    "maxLevel": 9
+  },
+  "dodge": {
+    "id": "dodge",
+    "display": "Dodge",
+    "description": "Chance to dodge physical enemy, chance increases when sneaking.",
+    "appliesTo": "Armor",
+    "group": "ULTIMATE",
+    "maxLevel": 5
+  },
+  "fumble": {
+    "id": "fumble",
+    "display": "Fumble",
+    "description": "Chance to explode enemy when hit by their arrows.",
+    "appliesTo": "Chestplate",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "iceaspect": {
+    "id": "iceaspect",
+    "display": "Ice Aspect",
+    "description": "A chance of causing the slowness effect on your enemy.",
+    "appliesTo": "Swords",
+    "group": "ULTIMATE",
+    "maxLevel": 3
+  },
+  "restore": {
+    "id": "restore",
+    "display": "Restore",
+    "description": "Upon breaking, item will lose this enchantment and repair half of its durability.",
+    "appliesTo": "Tools",
+    "group": "FABLED",
+    "maxLevel": 1
+  },
+  "implants": {
+    "id": "implants",
+    "display": "Implants",
+    "description": "Chance to restore food every few seconds.",
+    "appliesTo": "Helmets",
+    "group": "ULTIMATE",
+    "maxLevel": 3
+  },
+  "obsidianshield": {
+    "id": "obsidianshield",
+    "display": "Obsidianshield",
+    "description": "Gives permanent fire resistance.",
+    "appliesTo": "Armor",
+    "group": "ULTIMATE",
+    "maxLevel": 1
+  },
+  "piercing": {
+    "id": "piercing",
+    "display": "Piercing",
+    "description": "Inflicts more damage.",
+    "appliesTo": "Bows",
+    "group": "ULTIMATE",
+    "maxLevel": 5
+  },
+  "archer": {
+    "id": "archer",
+    "display": "Archer",
+    "description": "Increases damage dealt with bows.",
+    "appliesTo": "Bow",
+    "group": "ULTIMATE",
+    "maxLevel": 4
+  },
+  "marksman": {
+    "id": "marksman",
+    "display": "Marksman",
+    "description": "Increases damage dealt with Crossbows.",
+    "appliesTo": "Crossbow",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "poseidon": {
+    "id": "poseidon",
+    "display": "Poseidon",
+    "description": "Increases damage dealt with Tridents.",
+    "appliesTo": "Trident",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "safeguard": {
+    "id": "safeguard",
+    "display": "Safeguard",
+    "description": "Chance to gain Damage Resistance when defending.",
+    "appliesTo": "Armor",
+    "group": "ULTIMATE",
+    "maxLevel": 2
+  },
+  "confuse": {
+    "id": "confuse",
+    "display": "Confuse",
+    "description": "Chance to give nausea effect.",
+    "appliesTo": "Swords",
+    "group": "ULTIMATE",
+    "maxLevel": 4
+  },
+  "disintegrate": {
+    "id": "disintegrate",
+    "display": "Disintegrate",
+    "description": "Chance to deal extra durability damage to all enemy armor with every attack.",
+    "appliesTo": "Swords adn Axes",
+    "group": "ULTIMATE",
+    "maxLevel": 4
+  },
+  "hellfire": {
+    "id": "hellfire",
+    "display": "Hellfire",
+    "description": "Arrows turn into fireballs.",
+    "appliesTo": "Bow",
+    "group": "ULTIMATE",
+    "maxLevel": 5
+  },
+  "missile": {
+    "id": "missile",
+    "display": "Missile",
+    "description": "Arrows turn into fireballs.",
+    "appliesTo": "Crossbow",
+    "group": "ELITE",
+    "maxLevel": 5
+  },
+  "longbow": {
+    "id": "longbow",
+    "display": "Longbow",
+    "description": "Greatly increases damage dealt to enemy players beyond 20 blocks away.",
+    "appliesTo": "Bow",
+    "group": "ULTIMATE",
+    "maxLevel": 3
+  },
+  "tank": {
+    "id": "tank",
+    "display": "Tank",
+    "description": "Chance to decreases damage from enemy axes and bow by 4% per level.",
+    "appliesTo": "Armor",
+    "group": "ULTIMATE",
+    "maxLevel": 4
+  },
+  "swordsman": {
+    "id": "swordsman",
+    "display": "Swordsman",
+    "description": "Chance to reduces incoming damage while wielding a sword by up to 22% at max level.",
+    "appliesTo": "Armor",
+    "group": "ULTIMATE",
+    "maxLevel": 5
+  },
+  "critical": {
+    "id": "critical",
+    "display": "Critical",
+    "description": "Increase damage done with critical hit.",
+    "appliesTo": "Swords",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "rebound": {
+    "id": "rebound",
+    "display": "Rebound",
+    "description": "Gain some health back after kills.",
+    "appliesTo": "Weapons",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "thunderlord": {
+    "id": "thunderlord",
+    "display": "Thunderlord",
+    "description": "Strike monsters with lightning every 3 consecutive hits.",
+    "appliesTo": "Weapons",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "bleed": {
+    "id": "bleed",
+    "display": "Bleed",
+    "description": "Make your opponent bleed.",
+    "appliesTo": "Axes",
+    "group": "ULTIMATE",
+    "maxLevel": 6
+  },
+  "lavawalker": {
+    "id": "lavawalker",
+    "display": "Lava Walker",
+    "description": "Walk on Lava.",
+    "appliesTo": "Boots",
+    "group": "LEGENDARY",
+    "maxLevel": 1
+  },
+  "aqua": {
+    "id": "aqua",
+    "display": "Aqua",
+    "description": "Deal double damage while in water.",
+    "appliesTo": "Boots",
+    "group": "LEGENDARY",
+    "maxLevel": 4
+  },
+  "chaos": {
+    "id": "chaos",
+    "display": "Chaos",
+    "description": "Deal weakness and wither effects.",
+    "appliesTo": "Trident",
+    "group": "LEGENDARY",
+    "maxLevel": 5
+  },
+  "chunky": {
+    "id": "chunky",
+    "display": "Chunky",
+    "description": "Chance to receive less damage.",
+    "appliesTo": "Chestplates",
+    "group": "LEGENDARY",
+    "maxLevel": 6
+  },
+  "barbarian": {
+    "id": "barbarian",
+    "display": "Barbarian",
+    "description": "Chance to inflicts more axe damage.",
+    "appliesTo": "Axes",
+    "group": "LEGENDARY",
+    "maxLevel": 4
+  },
+  "doublestrike": {
+    "id": "doublestrike",
+    "display": "Double Strike",
+    "description": "A chance to strike twice.",
+    "appliesTo": "Swords",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "gears": {
+    "id": "gears",
+    "display": "Gears",
+    "description": "Added speed when equipped.",
+    "appliesTo": "Boots",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "inquisitive": {
+    "id": "inquisitive",
+    "display": "Inquisitive",
+    "description": "Chance to increase EXP drops from mobs.",
+    "appliesTo": "Swords",
+    "group": "LEGENDARY",
+    "maxLevel": 4
+  },
+  "lifesteal": {
+    "id": "lifesteal",
+    "display": "Lifesteal",
+    "description": "A chance to steal health when attacking.",
+    "appliesTo": "Swords, axes, hoes",
+    "group": "LEGENDARY",
+    "maxLevel": 5
+  },
+  "overload": {
+    "id": "overload",
+    "display": "Overload",
+    "description": "Unlocks additional hearts. Cannot Be Stacked.",
+    "appliesTo": "Armor",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "armored": {
+    "id": "armored",
+    "display": "Armored",
+    "description": "Decreases damage from enemy swords by 6% per level.",
+    "appliesTo": "Armor",
+    "group": "LEGENDARY",
+    "maxLevel": 4
+  },
+  "immortal": {
+    "id": "immortal",
+    "display": "Immortal",
+    "description": "Chance to prevents your armor from taking durability damage.",
+    "appliesTo": "Armor",
+    "group": "FABLED",
+    "maxLevel": 1
+  },
+  "unbreakable": {
+    "id": "unbreakable",
+    "display": "Unbreakable",
+    "description": "Tools with this enchant become unbreakable",
+    "appliesTo": "Tools",
+    "group": "FABLED",
+    "maxLevel": 1
+  },
+  "abiding": {
+    "id": "abiding",
+    "display": "Abiding",
+    "description": "Weapons with this enchant become unbreakable",
+    "appliesTo": "Weapons",
+    "group": "LEGENDARY",
+    "maxLevel": 1
+  },
+  "disarmor": {
+    "id": "disarmor",
+    "display": "Disarmor",
+    "description": "Chance of unequipping random armor piece from your opponent.",
+    "appliesTo": "Sword",
+    "group": "LEGENDARY",
+    "maxLevel": 8
+  },
+  "striker": {
+    "id": "striker",
+    "display": "Striker",
+    "description": "Rain arrows over opponent.",
+    "appliesTo": "Bow",
+    "group": "ULTIMATE",
+    "maxLevel": 3
+  },
+  "sniper": {
+    "id": "sniper",
+    "display": "Sniper",
+    "description": "Headshots with bows deal double damage.",
+    "appliesTo": "Bow",
+    "group": "ULTIMATE",
+    "maxLevel": 5
+  },
+  "deadshot": {
+    "id": "deadshot",
+    "display": "Deadshot",
+    "description": "Headshots with tridents deal double damage.",
+    "appliesTo": "Trident",
+    "group": "LEGENDARY",
+    "maxLevel": 5
+  },
+  "soulbound": {
+    "id": "soulbound",
+    "display": "Soulbound",
+    "description": "Keep item on death.",
+    "appliesTo": "Weapons + Tools + Bows + Trident + Shield + Elytra",
+    "group": "FABLED",
+    "maxLevel": 1
+  },
+  "neutralize": {
+    "id": "neutralize",
+    "display": "Neutralize",
+    "description": "Chance to disarm opponent.",
+    "appliesTo": "Bow, Crossbow",
+    "group": "FABLED",
+    "maxLevel": 1
+  },
+  "disarm": {
+    "id": "disarm",
+    "display": "Disarm",
+    "description": "Chance to disarm opponent.",
+    "appliesTo": "Swords",
+    "group": "FABLED",
+    "maxLevel": 1
+  },
+  "phoenix": {
+    "id": "phoenix",
+    "display": "Phoenix",
+    "description": "50/50 Chance to revive yourself when killed.",
+    "appliesTo": "Chestplates",
+    "group": "FABLED",
+    "maxLevel": 1
+  },
+  "strife": {
+    "id": "strife",
+    "display": "Strife",
+    "description": "Increases Trident melee damage.",
+    "appliesTo": "Trident",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "bluntforce": {
+    "id": "bluntforce",
+    "display": "Blunt Force",
+    "description": "Chance to strike with great force.",
+    "appliesTo": "Axes",
+    "group": "ELITE",
+    "maxLevel": 4
+  },
+  "suspend": {
+    "id": "suspend",
+    "display": "Suspend",
+    "description": "Chance to cause no knockback to mobs.",
+    "appliesTo": "Swords",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "fuddle": {
+    "id": "fuddle",
+    "display": "Fuddle",
+    "description": "Disorganize opponent's hotbar.",
+    "appliesTo": "Swords",
+    "group": "ULTIMATE",
+    "maxLevel": 3
+  },
+  "deranged": {
+    "id": "deranged",
+    "display": "Deranged",
+    "description": "Strike lightning at nearby players.",
+    "appliesTo": "Swords",
+    "group": "LEGENDARY",
+    "maxLevel": 3
+  },
+  "magnet": {
+    "id": "magnet",
+    "display": "Magnet",
+    "description": "Your attack pulls players towards you.",
+    "appliesTo": "Swords",
+    "group": "ELITE",
+    "maxLevel": 3
+  },
+  "callallies": {
+    "id": "callallies",
+    "display": "Call to Allies",
+    "description": "Call your allies to your aid if you are in danger.",
+    "appliesTo": "Goat horn",
+    "group": "ULTIMATE",
+    "maxLevel": 3
+  }
+}
