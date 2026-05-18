@@ -55,7 +55,7 @@ const isEnchantmentsActive = currentPath === "/enchantments";
 
   <!-- Desktop Nav -->
   <ul class="hidden lg:flex items-center gap-2">
-    <li>
+    <!-- <li>
       <a
         href="/"
         id="nav-home"
@@ -70,6 +70,23 @@ const isEnchantmentsActive = currentPath === "/enchantments";
           set:html={homeIcon}></span>
         Home
       </a>
+    </li> -->
+    <li>
+      <a
+        href="/enchantments"
+        id="nav-enchantments"
+        class={`nav-link flex items-center gap-2 px-5 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
+          isEnchantmentsActive
+            ? "text-pink-300 bg-pink-400/10 border border-pink-400/50 shadow-[0_0_16px_rgba(244,114,182,0.3)]"
+            : "text-slate-400 border border-transparent hover:text-pink-300 hover:border-pink-400/30 hover:bg-pink-400/05 hover:shadow-[0_0_12px_rgba(244,114,182,0.15)]"
+        }`}
+      >
+        <span
+          class="w-4 h-4 flex items-center justify-center"
+          set:html={bookIcon}
+        />
+        Enchantments
+      </a>
     </li>
     <li>
       <a
@@ -83,24 +100,9 @@ const isEnchantmentsActive = currentPath === "/enchantments";
       >
         <span
           class="w-4 h-4 flex items-center justify-center"
-          set:html={mapIcon}></span>
+          set:html={mapIcon}
+        />
         Live Map
-      </a>
-    </li>
-    <li>
-      <a
-        href="/enchantments"
-        id="nav-enchantments"
-        class={`nav-link flex items-center gap-2 px-5 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
-          isEnchantmentsActive
-            ? "text-pink-300 bg-pink-400/10 border border-pink-400/50 shadow-[0_0_16px_rgba(244,114,182,0.3)]"
-            : "text-slate-400 border border-transparent hover:text-pink-300 hover:border-pink-400/30 hover:bg-pink-400/05 hover:shadow-[0_0_12px_rgba(244,114,182,0.15)]"
-        }`}
-      >
-        <span
-          class="w-4 h-4 flex items-center justify-center"
-          set:html={bookIcon}></span>
-        Enchantments
       </a>
     </li>
   </ul>
@@ -111,8 +113,10 @@ const isEnchantmentsActive = currentPath === "/enchantments";
     class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-purple-400/30 text-purple-400 hover:bg-purple-400/10 hover:shadow-[0_0_12px_rgba(191,0,255,0.3)] transition-all duration-300"
     aria-label="Menu"
   >
-    <span class="w-5 h-5 flex items-center justify-center" set:html={barsIcon}
-    ></span>
+    <span
+      class="w-5 h-5 flex items-center justify-center"
+      set:html={barsIcon}
+    />
   </button>
 </nav>
 
@@ -134,7 +138,8 @@ const isEnchantmentsActive = currentPath === "/enchantments";
       >
         <span
           class="w-5 h-5 flex items-center justify-center"
-          set:html={homeIcon}></span>
+          set:html={homeIcon}
+        />
         Home
       </a>
     </li>
@@ -149,7 +154,8 @@ const isEnchantmentsActive = currentPath === "/enchantments";
       >
         <span
           class="w-5 h-5 flex items-center justify-center"
-          set:html={mapIcon}></span>
+          set:html={mapIcon}
+        />
         Live Map
       </a>
     </li>
@@ -164,7 +170,8 @@ const isEnchantmentsActive = currentPath === "/enchantments";
       >
         <span
           class="w-5 h-5 flex items-center justify-center"
-          set:html={bookIcon}></span>
+          set:html={bookIcon}
+        />
         Enchantments
       </a>
     </li>
