@@ -2,6 +2,24 @@
 import Layout from "../layouts/Layout.astro";
 import enchantmentsData from "../assets/configs/enchantments/enchantments.json";
 
+import simpleBook from "../assets/images/enchantments/simple_book.png";
+import uniqueBook from "../assets/images/enchantments/unique_book.png";
+import eliteBook from "../assets/images/enchantments/elite_book.png";
+import ultimateBook from "../assets/images/enchantments/ultimate_book.png";
+import legendBook from "../assets/images/enchantments/legend_book.png";
+import fabledBook from "../assets/images/enchantments/fabled_book.png";
+import heroicBook from "../assets/images/enchantments/heroic_book.png";
+
+const groupImages: Record<string, any> = {
+  SIMPLE: simpleBook,
+  UNIQUE: uniqueBook,
+  ELITE: eliteBook,
+  ULTIMATE: ultimateBook,
+  LEGENDARY: legendBook,
+  FABLED: fabledBook,
+  HEROIC: heroicBook,
+};
+
 // Map groups to colors based on user provided data
 const groupColors: Record<string, string> = {
   SIMPLE: "rgb(200, 200, 200)",
@@ -78,14 +96,22 @@ const groups = ["ALL", "SIMPLE", "UNIQUE", "ELITE", "ULTIMATE", "LEGENDARY", "FA
             style={`border-color: ${groupColors[ench.group]}40; background: linear-gradient(135deg, rgba(3,7,18,0.8) 0%, ${groupColors[ench.group]}10 100%); box-shadow: 0 4px 20px ${groupColors[ench.group]}10;`}
           >
             <div class="flex justify-between items-start mb-4">
-              <h3 
-                class={`font-orbitron text-xl font-bold tracking-wide ${groupWeights[ench.group] >= 5 ? 'text-transparent bg-clip-text' : ''}`} 
-                style={groupWeights[ench.group] >= 5 
-                  ? `background-image: linear-gradient(to bottom right, ${groupColors[ench.group]}, ${groupGradientEndColors[ench.group] || '#ffffff'}); text-shadow: 0 0 15px ${groupColors[ench.group]}40;`
-                  : `color: ${groupColors[ench.group]}; text-shadow: 0 0 10px ${groupColors[ench.group]}80;`}
-              >
-                {ench.display}
-              </h3>
+              <div class="flex items-center gap-3">
+                <img 
+                  src={groupImages[ench.group]?.src} 
+                  alt={`${ench.group} Book`} 
+                  class="w-8 h-8 object-contain"
+                  style={`filter: drop-shadow(0 0 6px ${groupColors[ench.group]}60);`}
+                />
+                <h3 
+                  class={`font-orbitron text-xl font-bold tracking-wide ${groupWeights[ench.group] >= 5 ? 'text-transparent bg-clip-text' : ''}`} 
+                  style={groupWeights[ench.group] >= 5 
+                    ? `background-image: linear-gradient(to bottom right, ${groupColors[ench.group]}, ${groupGradientEndColors[ench.group] || '#ffffff'}); text-shadow: 0 0 15px ${groupColors[ench.group]}40;`
+                    : `color: ${groupColors[ench.group]}; text-shadow: 0 0 10px ${groupColors[ench.group]}80;`}
+                >
+                  {ench.display}
+                </h3>
+              </div>
               <span class="text-xs font-bold px-2 py-1 rounded" style={`background: ${groupColors[ench.group]}20; color: ${groupColors[ench.group]};`}>
                 Max Lvl {ench.maxLevel}
               </span>
