@@ -18,7 +18,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/trout.png"
+      "image": "/images/fishing/trout.png"
     },
     {
       "id": "sardine",
@@ -38,7 +38,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/sardine.png"
+      "image": "/images/fishing/sardine.png"
     },
     {
       "id": "herring",
@@ -58,7 +58,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/herring.png"
+      "image": "/images/fishing/herring.png"
     },
     {
       "id": "perch",
@@ -78,7 +78,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/perch.png"
+      "image": "/images/fishing/perch.png"
     },
     {
       "id": "carp",
@@ -98,7 +98,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/carp.png"
+      "image": "/images/fishing/carp.png"
     },
     {
       "id": "snail",
@@ -118,7 +118,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/snail.png"
+      "image": "/images/fishing/snail.png"
     },
     {
       "id": "mussel",
@@ -138,7 +138,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/mussel.png"
+      "image": "/images/fishing/mussel.png"
     },
     {
       "id": "clam",
@@ -158,7 +158,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/clam.png"
+      "image": "/images/fishing/clam.png"
     },
     {
       "id": "amphipod",
@@ -178,7 +178,7 @@
       "rarityChance": "76.92%",
       "worldChance": "8.55%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/amphipod.png"
+      "image": "/images/fishing/amphipod.png"
     },
     {
       "id": "pike",
@@ -198,7 +198,7 @@
       "rarityChance": "14.96%",
       "worldChance": "2.14%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/pike.png"
+      "image": "/images/fishing/pike.png"
     },
     {
       "id": "lckerel",
@@ -218,7 +218,7 @@
       "rarityChance": "14.96%",
       "worldChance": "2.14%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/lckerel.png"
+      "image": "/images/fishing/lckerel.png"
     },
     {
       "id": "catfish",
@@ -238,7 +238,7 @@
       "rarityChance": "14.96%",
       "worldChance": "2.14%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/catfish.png"
+      "image": "/images/fishing/catfish.png"
     },
     {
       "id": "bass",
@@ -258,7 +258,7 @@
       "rarityChance": "14.96%",
       "worldChance": "2.14%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/bass.png"
+      "image": "/images/fishing/bass.png"
     },
     {
       "id": "crayfish",
@@ -278,7 +278,7 @@
       "rarityChance": "14.96%",
       "worldChance": "2.14%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/crayfish.png"
+      "image": "/images/fishing/crayfish.png"
     },
     {
       "id": "crab",
@@ -298,7 +298,7 @@
       "rarityChance": "14.96%",
       "worldChance": "2.14%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/crab.png"
+      "image": "/images/fishing/crab.png"
     },
     {
       "id": "freshwater_sponge",
@@ -318,7 +318,7 @@
       "rarityChance": "14.96%",
       "worldChance": "2.14%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/freshwater_sponge.png"
+      "image": "/images/fishing/freshwater_sponge.png"
     },
     {
       "id": "trigger_fish",
@@ -338,7 +338,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/trigger_fish.png"
+      "image": "/images/fishing/trigger_fish.png"
     },
     {
       "id": "surgeonfish",
@@ -358,7 +358,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/surgeonfish.png"
+      "image": "/images/fishing/surgeonfish.png"
     },
     {
       "id": "parrotfish",
@@ -378,7 +378,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/parrotfish.png"
+      "image": "/images/fishing/parrotfish.png"
     },
     {
       "id": "damsel_fish",
@@ -398,7 +398,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/damsel_fish.png"
+      "image": "/images/fishing/damsel_fish.png"
     },
     {
       "id": "butterflyfish",
@@ -418,7 +418,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/butterflyfish.png"
+      "image": "/images/fishing/butterflyfish.png"
     },
     {
       "id": "angelfish",
@@ -438,7 +438,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/angelfish.png"
+      "image": "/images/fishing/angelfish.png"
     },
     {
       "id": "snapper",
@@ -458,7 +458,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/snapper.png"
+      "image": "/images/fishing/snapper.png"
     },
     {
       "id": "grouper",
@@ -478,7 +478,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/grouper.png"
+      "image": "/images/fishing/grouper.png"
     },
     {
       "id": "redfish",
@@ -498,7 +498,7 @@
       "rarityChance": "5.38%",
       "worldChance": "0.60%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/redfish.png"
+      "image": "/images/fishing/redfish.png"
     },
     {
       "id": "moray_eel",
@@ -518,7 +518,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/moray_eel.png"
+      "image": "/images/fishing/moray_eel.png"
     },
     {
       "id": "lion_fish",
@@ -538,7 +538,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/lion_fish.png"
+      "image": "/images/fishing/lion_fish.png"
     },
     {
       "id": "wahoo",
@@ -558,7 +558,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/wahoo.png"
+      "image": "/images/fishing/wahoo.png"
     },
     {
       "id": "tuna",
@@ -578,7 +578,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/tuna.png"
+      "image": "/images/fishing/tuna.png"
     },
     {
       "id": "sword_fish",
@@ -598,7 +598,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/sword_fish.png"
+      "image": "/images/fishing/sword_fish.png"
     },
     {
       "id": "snook",
@@ -618,7 +618,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/snook.png"
+      "image": "/images/fishing/snook.png"
     },
     {
       "id": "marlin",
@@ -638,7 +638,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/marlin.png"
+      "image": "/images/fishing/marlin.png"
     },
     {
       "id": "barracuda",
@@ -658,7 +658,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/barracuda.png"
+      "image": "/images/fishing/barracuda.png"
     },
     {
       "id": "viper_fish",
@@ -678,7 +678,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/viper_fish.png"
+      "image": "/images/fishing/viper_fish.png"
     },
     {
       "id": "vampire_squid",
@@ -698,7 +698,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/vampire_squid.png"
+      "image": "/images/fishing/vampire_squid.png"
     },
     {
       "id": "lanternfish",
@@ -718,7 +718,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/lanternfish.png"
+      "image": "/images/fishing/lanternfish.png"
     },
     {
       "id": "gulper_eel",
@@ -738,7 +738,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/gulper_eel.png"
+      "image": "/images/fishing/gulper_eel.png"
     },
     {
       "id": "giant_isopod",
@@ -758,7 +758,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/giant_isopod.png"
+      "image": "/images/fishing/giant_isopod.png"
     },
     {
       "id": "dumbo_octopus",
@@ -778,7 +778,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/dumbo_octopus.png"
+      "image": "/images/fishing/dumbo_octopus.png"
     },
     {
       "id": "dragon_fish",
@@ -798,7 +798,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/dragon_fish.png"
+      "image": "/images/fishing/dragon_fish.png"
     },
     {
       "id": "blobfish",
@@ -818,7 +818,7 @@
       "rarityChance": "2.73%",
       "worldChance": "0.17%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/blobfish.png"
+      "image": "/images/fishing/blobfish.png"
     },
     {
       "id": "anglerfish",
@@ -838,7 +838,7 @@
       "rarityChance": "0.01%",
       "worldChance": "0.01%",
       "world": "Overworld",
-      "image": "/src/assets/images/fishing/anglerfish.png"
+      "image": "/images/fishing/anglerfish.png"
     },
     {
       "id": "rustfin",
@@ -858,7 +858,7 @@
       "rarityChance": "74.61%",
       "worldChance": "18.65%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/rustfin.png"
+      "image": "/images/fishing/rustfin.png"
     },
     {
       "id": "glowsnap",
@@ -878,7 +878,7 @@
       "rarityChance": "74.61%",
       "worldChance": "18.65%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/glowsnap.png"
+      "image": "/images/fishing/glowsnap.png"
     },
     {
       "id": "glowtail",
@@ -898,7 +898,7 @@
       "rarityChance": "74.61%",
       "worldChance": "18.65%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/glowtail.png"
+      "image": "/images/fishing/glowtail.png"
     },
     {
       "id": "spore_jelly",
@@ -918,7 +918,7 @@
       "rarityChance": "74.61%",
       "worldChance": "18.65%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/spore_jelly.png"
+      "image": "/images/fishing/spore_jelly.png"
     },
     {
       "id": "bone_dart",
@@ -938,7 +938,7 @@
       "rarityChance": "18.65%",
       "worldChance": "4.66%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/bone_dart.png"
+      "image": "/images/fishing/bone_dart.png"
     },
     {
       "id": "cinder_pike",
@@ -958,7 +958,7 @@
       "rarityChance": "18.65%",
       "worldChance": "4.66%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/cinder_pike.png"
+      "image": "/images/fishing/cinder_pike.png"
     },
     {
       "id": "ember_carp",
@@ -978,7 +978,7 @@
       "rarityChance": "18.65%",
       "worldChance": "4.66%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/ember_carp.png"
+      "image": "/images/fishing/ember_carp.png"
     },
     {
       "id": "warped_eel",
@@ -998,7 +998,7 @@
       "rarityChance": "18.65%",
       "worldChance": "4.66%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/warped_eel.png"
+      "image": "/images/fishing/warped_eel.png"
     },
     {
       "id": "ashmaw",
@@ -1018,7 +1018,7 @@
       "rarityChance": "5.22%",
       "worldChance": "1.31%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/ashmaw.png"
+      "image": "/images/fishing/ashmaw.png"
     },
     {
       "id": "soulfin",
@@ -1038,7 +1038,7 @@
       "rarityChance": "5.22%",
       "worldChance": "1.31%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/soulfin.png"
+      "image": "/images/fishing/soulfin.png"
     },
     {
       "id": "blightscale",
@@ -1058,7 +1058,7 @@
       "rarityChance": "5.22%",
       "worldChance": "1.31%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/blightscale.png"
+      "image": "/images/fishing/blightscale.png"
     },
     {
       "id": "nether_ray",
@@ -1078,7 +1078,7 @@
       "rarityChance": "5.22%",
       "worldChance": "1.31%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/nether_ray.png"
+      "image": "/images/fishing/nether_ray.png"
     },
     {
       "id": "hellpuffer",
@@ -1098,7 +1098,7 @@
       "rarityChance": "1.49%",
       "worldChance": "0.37%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/hellpuffer.png"
+      "image": "/images/fishing/hellpuffer.png"
     },
     {
       "id": "hellstripe",
@@ -1118,7 +1118,7 @@
       "rarityChance": "1.49%",
       "worldChance": "0.37%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/hellstripe.png"
+      "image": "/images/fishing/hellstripe.png"
     },
     {
       "id": "lava_lantern",
@@ -1138,7 +1138,7 @@
       "rarityChance": "1.49%",
       "worldChance": "0.37%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/lava_lantern.png"
+      "image": "/images/fishing/lava_lantern.png"
     },
     {
       "id": "magma_belly",
@@ -1158,7 +1158,7 @@
       "rarityChance": "1.49%",
       "worldChance": "0.37%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/magma_belly.png"
+      "image": "/images/fishing/magma_belly.png"
     },
     {
       "id": "moltenjaw",
@@ -1178,7 +1178,7 @@
       "rarityChance": "0.02%",
       "worldChance": "0.02%",
       "world": "Nether",
-      "image": "/src/assets/images/fishing/moltenjaw.png"
+      "image": "/images/fishing/moltenjaw.png"
     },
     {
       "id": "barreleye_fish",
@@ -1198,7 +1198,7 @@
       "rarityChance": "100.00%",
       "worldChance": "100.00%",
       "world": "The End",
-      "image": "/src/assets/images/fishing/barreleye_fish.png"
+      "image": "/images/fishing/barreleye_fish.png"
     }
   ],
   "baits": [
@@ -1206,61 +1206,61 @@
       "id": "nautilus_bait",
       "name": "Nautilus Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/nautilus_bait.png"
+      "image": "/images/fishing/nautilus_bait.png"
     },
     {
       "id": "bobber_bait",
       "name": "Bobber Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/bobber_bait.png"
+      "image": "/images/fishing/bobber_bait.png"
     },
     {
       "id": "ender_bait",
       "name": "Ender Bait",
       "maxBaits": 1,
-      "image": "/src/assets/images/fishing/ender_bait.png"
+      "image": "/images/fishing/ender_bait.png"
     },
     {
       "id": "iridescent_bait",
       "name": "Iridescent Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/iridescent_bait.png"
+      "image": "/images/fishing/iridescent_bait.png"
     },
     {
       "id": "sea_heart_bait",
       "name": "Sea Heart Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/sea_heart_bait.png"
+      "image": "/images/fishing/sea_heart_bait.png"
     },
     {
       "id": "gelatin_bait",
       "name": "Gelatin Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/gelatin_bait.png"
+      "image": "/images/fishing/gelatin_bait.png"
     },
     {
       "id": "copper_bait",
       "name": "Copper Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/copper_bait.png"
+      "image": "/images/fishing/copper_bait.png"
     },
     {
       "id": "trident_bait",
       "name": "Trident Bait",
       "maxBaits": 3,
-      "image": "/src/assets/images/fishing/trident_bait.png"
+      "image": "/images/fishing/trident_bait.png"
     },
     {
       "id": "slime_bait",
       "name": "Slime Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/slime_bait.png"
+      "image": "/images/fishing/slime_bait.png"
     },
     {
       "id": "magma_bait",
       "name": "Magma Bait",
       "maxBaits": -1,
-      "image": "/src/assets/images/fishing/magma_bait.png"
+      "image": "/images/fishing/magma_bait.png"
     }
   ],
   "rods": [
@@ -1283,7 +1283,7 @@
           "value": -2
         }
       ],
-      "image": "/src/assets/images/fishing/copper_fishing_rod.png"
+      "image": "/images/fishing/copper_fishing_rod.png"
     },
     {
       "id": "iron_fishing_rod",
@@ -1304,7 +1304,7 @@
           "value": -4
         }
       ],
-      "image": "/src/assets/images/fishing/iron_fishing_rod.png"
+      "image": "/images/fishing/iron_fishing_rod.png"
     },
     {
       "id": "golden_fishing_rod",
@@ -1329,7 +1329,7 @@
           "value": -6
         }
       ],
-      "image": "/src/assets/images/fishing/golden_fishing_rod.png"
+      "image": "/images/fishing/golden_fishing_rod.png"
     },
     {
       "id": "diamond_fishing_rod",
@@ -1355,7 +1355,7 @@
           "type": "lava-fishing"
         }
       ],
-      "image": "/src/assets/images/fishing/diamond_fishing_rod.png"
+      "image": "/images/fishing/diamond_fishing_rod.png"
     },
     {
       "id": "netherite_fishing_rod",
@@ -1382,7 +1382,7 @@
           "type": "lava-fishing"
         }
       ],
-      "image": "/src/assets/images/fishing/netherite_fishing_rod.png"
+      "image": "/images/fishing/netherite_fishing_rod.png"
     }
   ]
 }
