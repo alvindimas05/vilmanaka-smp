@@ -60,14 +60,19 @@ const whatsappIcon = icon(faWhatsapp).html[0];
         </h1> -->
 
         <!-- Description -->
-        <p
-          class="font-rajdhani text-lg text-slate-300/90 max-w-md leading-relaxed"
-          style="text-shadow: 0 0 20px rgba(191,0,255,0.15);"
-        >
-          Server Minecraft <span class="neon-text-orange" style="animation: none;"
-            >Survival Mix</span
-          > dimana para player bisa membangun dengan tenang.
-        </p>
+        <div>
+          <p
+            class="font-rajdhani text-lg text-slate-300/90 max-w-md leading-relaxed"
+            style="text-shadow: 0 0 20px rgba(191,0,255,0.15);"
+          >
+            Server Minecraft <span
+              class="neon-text-orange"
+              style="animation: none;">Survival Mix</span
+            >
+            <span class="neon-text-cyan">Java & Bedrock</span> dimana player bisa
+            building, explorasi, dan have fun dengan komunitas.
+          </p>
+        </div>
 
         <!-- IP Box -->
         <div
@@ -209,33 +214,33 @@ const whatsappIcon = icon(faWhatsapp).html[0];
 
 <script define:vars={{ serverAddress: import.meta.env.VITE_SERVER_ADDRESS }}>
   (async () => {
-    const dot = document.getElementById('status-dot');
-    const label = document.getElementById('status-label');
-    const playerCount = document.getElementById('player-count');
+    const dot = document.getElementById("status-dot");
+    const label = document.getElementById("status-label");
+    const playerCount = document.getElementById("player-count");
     try {
       const res = await fetch(`https://api.mcsrvstat.us/3/${serverAddress}`);
       const data = await res.json();
       if (data.online) {
-        dot.style.background = '#00ff88';
-        dot.style.boxShadow = '0 0 6px #00ff88';
-        label.textContent = 'Online';
-        label.style.color = '#00ff88';
+        dot.style.background = "#00ff88";
+        dot.style.boxShadow = "0 0 6px #00ff88";
+        label.textContent = "Online";
+        label.style.color = "#00ff88";
         const online = data.players?.online ?? 0;
         const max = data.players?.max ?? 0;
         playerCount.textContent = `${online} / ${max} Players`;
       } else {
-        dot.style.background = '#ff4444';
-        dot.style.boxShadow = '0 0 6px #ff4444';
-        label.textContent = 'Offline';
-        label.style.color = '#ff4444';
-        playerCount.textContent = '';
+        dot.style.background = "#ff4444";
+        dot.style.boxShadow = "0 0 6px #ff4444";
+        label.textContent = "Offline";
+        label.style.color = "#ff4444";
+        playerCount.textContent = "";
       }
     } catch {
-      dot.style.background = '#ff4444';
-      dot.style.boxShadow = '0 0 6px #ff4444';
-      label.textContent = 'Offline';
-      label.style.color = '#ff4444';
-      playerCount.textContent = '';
+      dot.style.background = "#ff4444";
+      dot.style.boxShadow = "0 0 6px #ff4444";
+      label.textContent = "Offline";
+      label.style.color = "#ff4444";
+      playerCount.textContent = "";
     }
   })();
 </script>
