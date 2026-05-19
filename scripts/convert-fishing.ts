@@ -122,7 +122,7 @@ for (const [key, value] of Object.entries(fishesYml)) {
   const worldRarityChanceNum = worldTotals[world] > 0 ? (worldRarityTotals[worldRarityKey] / worldTotals[world]) : 0;
   const worldRarityChance = parseFloat((worldRarityChanceNum * 100).toFixed(5)) + '%';
 
-  let image = `/src/assets/images/fishing/${key}.png`;
+  let image = `/images/fishing/${key}.png`;
 
   result.fishes.push({
     id: key,
@@ -150,7 +150,7 @@ for (const [key, value] of Object.entries(baitsYml)) {
     id: key,
     name: bait.nick || key,
     maxBaits: bait['max-baits'] || -1,
-    image: `/src/assets/images/fishing/${key}.png`
+    image: `/images/fishing/${key}.png`
   });
 }
 
@@ -178,7 +178,7 @@ for (const [key, value] of Object.entries(rodsYml)) {
     lore,
     maxDurability: rod['max-durability'],
     effects,
-    image: `/src/assets/images/fishing/${key}.png`
+    image: `/images/fishing/${key}.png`
   });
 }
 
