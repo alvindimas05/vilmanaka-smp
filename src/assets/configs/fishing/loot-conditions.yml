@@ -7,8 +7,8 @@ global_pool:
         world:
           - world
       list:
-        - 'group_for_each:common_ow:+100'
-        - 'group_for_each:rare_ow:+25'
+        - 'group_for_each:common_ow:+175'
+        - 'group_for_each:rare_ow:+75'
       sub-groups:
         ow_reef:
           conditions:
@@ -17,7 +17,7 @@ global_pool:
               - minecraft:lukewarm_ocean
               - minecraft:deep_lukewarm_ocean
           list:
-            - 'group_for_each:epic_reef:+7'
+            - 'group_for_each:epic_reef:+20'
             - 'group_for_each:leg_reef:+2'
         ow_pelagic:
           conditions:
@@ -45,9 +45,9 @@ global_pool:
         world:
           - world_nether
       list:
-        - 'group_for_each:common_nether_univ:+100'
-        - 'group_for_each:rare_nether_univ:+25'
-        - 'group_for_each:epic_nether_univ:+7'
+        - 'group_for_each:common_nether_univ:+175'
+        - 'group_for_each:rare_nether_univ:+75'
+        - 'group_for_each:epic_nether_univ:+30'
         - 'group_for_each:mythical_nether:+0.1'
       sub-groups:
         nether_warped:
@@ -55,22 +55,22 @@ global_pool:
             biome:
               - minecraft:warped_forest
           list:
-            - 'group_for_each:common_nether_warped:+100'
-            - 'group_for_each:rare_nether_warped:+25'
+            - 'group_for_each:common_nether_warped:+175'
+            - 'group_for_each:rare_nether_warped:+75'
         nether_soul:
           conditions:
             biome:
               - minecraft:soul_sand_valley
           list:
-            - 'group_for_each:rare_nether_soul:+25'
-            - 'group_for_each:epic_nether_soul:+7'
+            - 'group_for_each:rare_nether_soul:+75'
+            - 'group_for_each:epic_nether_soul:+25'
         nether_hot:
           conditions:
             biome:
               - minecraft:nether_wastes
               - minecraft:basalt_deltas
           list:
-            - 'group_for_each:leg_nether_hot:+2'
+            - 'group_for_each:leg_nether_hot:+1'
 
     end_fishes:
       conditions:

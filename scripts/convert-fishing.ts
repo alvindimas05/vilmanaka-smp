@@ -76,8 +76,7 @@ const result = {
 
 const groupTotals: Record<string, number> = {};
 const worldTotals: Record<string, number> = {};
-const worldRarityTotals: Record<string, Record<string, number>> = {};
-
+const worldRarityTotals: Record<string, number> = {};
 // Parse Fishes first pass to get group totals
 for (const [key, value] of Object.entries(fishesYml)) {
   if (!value || typeof value !== 'object') continue;
@@ -94,9 +93,9 @@ for (const [key, value] of Object.entries(fishesYml)) {
   if (!worldTotals[world]) worldTotals[world] = 0;
   worldTotals[world] += baseWeight;
 
-  if (!worldRarityTotals[world]) worldRarityTotals[world] = {};
-  if (!worldRarityTotals[world][rarity]) worldRarityTotals[world][rarity] = 0;
-  worldRarityTotals[world][rarity] += baseWeight;
+  const worldRarityKey = `${world}_${rarity}`;
+  if (!worldRarityTotals[worldRarityKey]) worldRarityTotals[worldRarityKey] = 0;
+  worldRarityTotals[worldRarityKey] += baseWeight;
 }
 
 // Parse Fishes second pass
@@ -111,16 +110,17 @@ for (const [key, value] of Object.entries(fishesYml)) {
   const group = Array.isArray(fish.group) ? fish.group[0] : fish.group;
   const baseWeight = weights[group] || weights[key] || 0;
   const totalWeight = groupTotals[group] || 1;
-  const percentage = baseWeight > 0 ? ((baseWeight / totalWeight) * 100).toFixed(2) + '%' : '0%';
+  const percentage = baseWeight > 0 ? parseFloat(((baseWeight / totalWeight) * 100).toFixed(5)) + '%' : '0%';
 
   const world = getWorldFromGroup(group);
   const rarity = getRarityTier(group);
 
-  const rarityChanceNum = worldTotals[world] > 0 ? (worldRarityTotals[world][rarity] / worldTotals[world]) : 0;
-  const rarityChance = (rarityChanceNum * 100).toFixed(2) + '%';
-  
-  const worldChanceNum = worldTotals[world] > 0 ? (baseWeight / worldTotals[world]) : 0;
-  const worldChance = (worldChanceNum * 100).toFixed(2) + '%';
+  const chanceNum = worldTotals[world] > 0 ? (baseWeight / worldTotals[world]) : 0;
+  const chance = parseFloat((chanceNum * 100).toFixed(5)) + '%';
+
+  const worldRarityKey = `${world}_${rarity}`;
+  const worldRarityChanceNum = worldTotals[world] > 0 ? (worldRarityTotals[worldRarityKey] / worldTotals[world]) : 0;
+  const worldRarityChance = parseFloat((worldRarityChanceNum * 100).toFixed(5)) + '%';
 
   let image = `/src/assets/images/fishing/${key}.png`;
 
@@ -135,8 +135,8 @@ for (const [key, value] of Object.entries(fishesYml)) {
       bonus: fish.price?.bonus || 0,
     },
     percentage,
-    rarityChance,
-    worldChance,
+    chance,
+    worldRarityChance,
     world,
     image
   });

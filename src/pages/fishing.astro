@@ -12,6 +12,12 @@ const getRarityTier = (group: string) => {
   return "COMMON";
 };
 
+const getWorld = (group: string) => {
+  if (group.includes("nether")) return "NETHER";
+  if (group.includes("end")) return "END";
+  return "OVERWORLD";
+};
+
 const getBiomeName = (group: string) => {
   if (group.includes("ow")) return "Overworld";
   if (group.includes("reef")) return "Coral Reef";
@@ -68,12 +74,14 @@ const groupGradientEndColors: Record<string, string> = {
 };
 
 const rarities = ["ALL", "COMMON", "RARE", "EPIC", "LEGENDARY", "MYTHICAL"];
+const worlds = ["ALL", "OVERWORLD", "NETHER", "END"];
 
 // Prepare lists
 const fishesList = fishingData.fishes
   .map((fish: any) => ({
     ...fish,
     rarity: getRarityTier(fish.group),
+    world: getWorld(fish.group),
   }))
   .sort((a: any, b: any) => {
     const rarityOrder = ["MYTHICAL", "LEGENDARY", "EPIC", "RARE", "COMMON"];
@@ -115,23 +123,48 @@ const rodsList = fishingData.rods;
       <!-- Filters (Fishes Only) -->
       <div
         id="fishes-filters"
-        class="flex flex-wrap gap-3 mb-8 transition-opacity duration-300"
+        class="flex flex-col gap-4 mb-8 transition-opacity duration-300"
       >
-        {
-          rarities.map((rarity) => (
-            <button
-              class="filter-btn px-4 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest border transition-all duration-300 cursor-pointer"
-              data-rarity={rarity}
-              style={
-                rarity === "ALL"
-                  ? "border-color: rgba(0,255,255,0.5); color: #86efac;"
-                  : `border-color: ${groupColors[rarity]}; color: ${groupColors[rarity]};`
-              }
-            >
-              {rarity}
-            </button>
-          ))
-        }
+        <div class="flex flex-wrap gap-3 items-center">
+          <span class="text-slate-400 font-orbitron text-sm mr-2">Rarity:</span>
+          {
+            rarities.map((rarity) => (
+              <button
+                class="filter-btn-rarity px-4 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest border transition-all duration-300 cursor-pointer"
+                data-rarity={rarity}
+                style={
+                  rarity === "ALL"
+                    ? "border-color: rgba(0,255,255,0.5); color: #86efac;"
+                    : `border-color: ${groupColors[rarity]}; color: ${groupColors[rarity]};`
+                }
+              >
+                {rarity}
+              </button>
+            ))
+          }
+        </div>
+        <div class="flex flex-wrap gap-3 items-center">
+          <span class="text-slate-400 font-orbitron text-sm mr-2">World:</span>
+          {
+            worlds.map((world) => (
+              <button
+                class="filter-btn-world px-4 py-2 rounded-lg font-orbitron text-xs font-semibold uppercase tracking-widest border transition-all duration-300 cursor-pointer"
+                data-world={world}
+                style={
+                  world === "ALL"
+                    ? "border-color: rgba(0,255,255,0.5); color: #86efac;"
+                    : world === "NETHER"
+                    ? "border-color: #ef4444; color: #ef4444;"
+                    : world === "END"
+                    ? "border-color: #d946ef; color: #d946ef;"
+                    : "border-color: #3b82f6; color: #3b82f6;"
+                }
+              >
+                {world}
+              </button>
+            ))
+          }
+        </div>
       </div>
 
       <!-- Fishes View -->
@@ -144,7 +177,12 @@ const rodsList = fishingData.rods;
             <div
               class="fish-card glass-panel rounded-xl p-6 border transition-all duration-300 hover:scale-[1.02] flex flex-col"
               data-rarity={fish.rarity}
-              style={`border-color: ${groupColors[fish.rarity]}40; background: linear-gradient(135deg, rgba(3,7,18,0.8) 0%, ${groupColors[fish.rarity]}10 100%); box-shadow: 0 4px 20px ${groupColors[fish.rarity]}10;`}
+              data-world={fish.world}
+              style={`border-color: ${
+                groupColors[fish.rarity]
+              }40; background: linear-gradient(135deg, rgba(3,7,18,0.8) 0%, ${
+                groupColors[fish.rarity]
+              }10 100%); box-shadow: 0 4px 20px ${groupColors[fish.rarity]}10;`}
             >
               <div class="flex justify-between items-start mb-4">
                 <div class="flex items-center gap-3">
@@ -155,11 +193,25 @@ const rodsList = fishingData.rods;
                     onerror="this.style.display='none'"
                   />
                   <h3
-                    class={`font-orbitron text-xl font-bold tracking-wide ${["LEGENDARY", "MYTHICAL", "EPIC"].includes(fish.rarity) ? "text-transparent bg-clip-text" : ""}`}
+                    class={`font-orbitron text-xl font-bold tracking-wide ${
+                      ["LEGENDARY", "MYTHICAL", "EPIC"].includes(fish.rarity)
+                        ? "text-transparent bg-clip-text"
+                        : ""
+                    }`}
                     style={
                       ["LEGENDARY", "MYTHICAL", "EPIC"].includes(fish.rarity)
-                        ? `background-image: linear-gradient(to bottom right, ${groupColors[fish.rarity]}, ${groupGradientEndColors[fish.rarity] || "#ffffff"}); text-shadow: 0 0 15px ${groupColors[fish.rarity]}40;`
-                        : `color: ${groupColors[fish.rarity]}; text-shadow: 0 0 10px ${groupColors[fish.rarity]}80;`
+                        ? `background-image: linear-gradient(to bottom right, ${
+                            groupColors[fish.rarity]
+                          }, ${
+                            groupGradientEndColors[fish.rarity] || "#ffffff"
+                          }); text-shadow: 0 0 15px ${
+                            groupColors[fish.rarity]
+                          }40;`
+                        : `color: ${
+                            groupColors[fish.rarity]
+                          }; text-shadow: 0 0 10px ${
+                            groupColors[fish.rarity]
+                          }80;`
                     }
                   >
                     {fish.name}
@@ -167,7 +219,9 @@ const rodsList = fishingData.rods;
                 </div>
                 <span
                   class="text-xs font-bold px-2 py-1 rounded whitespace-nowrap"
-                  style={`background: ${groupColors[fish.rarity]}20; color: ${groupColors[fish.rarity]};`}
+                  style={`background: ${groupColors[fish.rarity]}20; color: ${
+                    groupColors[fish.rarity]
+                  };`}
                 >
                   {fish.rarity}
                 </span>
@@ -214,18 +268,18 @@ const rodsList = fishingData.rods;
                 </div>
                 <div class="flex justify-between items-center">
                   <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">
-                    Rarity Chance ({fish.world}):
+                    World Chance:
                   </span>
                   <span class="text-sm font-semibold text-blue-300">
-                    {fish.rarityChance}
+                    {fish.chance}
                   </span>
                 </div>
                 <div class="flex justify-between items-center">
                   <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">
-                    World Chance:
+                    World Rarity Chance:
                   </span>
-                  <span class="text-sm font-semibold text-blue-300">
-                    {fish.worldChance}
+                  <span class="text-sm font-semibold text-purple-300">
+                    {fish.worldRarityChance}
                   </span>
                 </div>
               </div>
@@ -348,7 +402,7 @@ const rodsList = fishingData.rods;
       tab?.classList.remove(
         "border-blue-400",
         "bg-blue-400/10",
-        "text-blue-300",
+        "text-blue-300"
       );
       tab?.classList.add("border-transparent", "text-slate-400");
     });
@@ -360,7 +414,7 @@ const rodsList = fishingData.rods;
   function activateTab(
     tabBtn: HTMLElement | null,
     viewEl: HTMLElement | null,
-    showFilters: boolean,
+    showFilters: boolean
   ) {
     resetTabs();
     tabBtn?.classList.remove("border-transparent", "text-slate-400");
@@ -378,44 +432,59 @@ const rodsList = fishingData.rods;
   }
 
   tabFishes?.addEventListener("click", () =>
-    activateTab(tabFishes, viewFishes, true),
+    activateTab(tabFishes, viewFishes, true)
   );
   tabBaits?.addEventListener("click", () =>
-    activateTab(tabBaits, viewBaits, false),
+    activateTab(tabBaits, viewBaits, false)
   );
   tabRods?.addEventListener("click", () =>
-    activateTab(tabRods, viewRods, false),
+    activateTab(tabRods, viewRods, false)
   );
 
   // Fishes Filter Logic
-  const filterBtns = document.querySelectorAll(".filter-btn");
+  const rarityBtns = document.querySelectorAll(".filter-btn-rarity");
+  const worldBtns = document.querySelectorAll(".filter-btn-world");
   const cards = document.querySelectorAll(".fish-card");
-  let currentFilter = "ALL";
+  let currentRarity = "ALL";
+  let currentWorld = "ALL";
+
+  function applyBtnStyle(btnEl: HTMLElement, isActive: boolean) {
+    if (isActive) {
+      let color = btnEl.style.color;
+      btnEl.style.backgroundColor = color
+        .replace("rgb", "rgba")
+        .replace(")", ", 0.15)");
+      btnEl.style.boxShadow = `0 0 12px ${color
+        .replace("rgb", "rgba")
+        .replace(")", ", 0.3)")}`;
+    } else {
+      btnEl.style.backgroundColor = "transparent";
+      btnEl.style.boxShadow = "none";
+    }
+  }
 
   function updateFilterUI() {
-    filterBtns.forEach((btn) => {
+    rarityBtns.forEach((btn) => {
       const btnEl = btn as HTMLElement;
-      const rarity = btnEl.getAttribute("data-rarity");
-      if (rarity === currentFilter) {
-        btnEl.classList.add("bg-opacity-20");
-        btnEl.style.backgroundColor = btnEl.style.color
-          .replace("rgb", "rgba")
-          .replace(")", ", 0.15)");
-        btnEl.style.boxShadow = `0 0 12px ${btnEl.style.color.replace("rgb", "rgba").replace(")", ", 0.3)")}`;
-      } else {
-        btnEl.style.backgroundColor = "transparent";
-        btnEl.style.boxShadow = "none";
-      }
+      applyBtnStyle(btnEl, btnEl.getAttribute("data-rarity") === currentRarity);
+    });
+
+    worldBtns.forEach((btn) => {
+      const btnEl = btn as HTMLElement;
+      applyBtnStyle(btnEl, btnEl.getAttribute("data-world") === currentWorld);
     });
   }
 
   function filterCards() {
     cards.forEach((card) => {
       const el = card as HTMLElement;
-      if (
-        currentFilter === "ALL" ||
-        el.getAttribute("data-rarity") === currentFilter
-      ) {
+      const matchRarity =
+        currentRarity === "ALL" ||
+        el.getAttribute("data-rarity") === currentRarity;
+      const matchWorld =
+        currentWorld === "ALL" ||
+        el.getAttribute("data-world") === currentWorld;
+      if (matchRarity && matchWorld) {
         el.style.display = "block";
       } else {
         el.style.display = "none";
@@ -423,9 +492,17 @@ const rodsList = fishingData.rods;
     });
   }
 
-  filterBtns.forEach((btn) => {
+  rarityBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      currentFilter = btn.getAttribute("data-rarity") || "ALL";
+      currentRarity = btn.getAttribute("data-rarity") || "ALL";
+      updateFilterUI();
+      filterCards();
+    });
+  });
+
+  worldBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentWorld = btn.getAttribute("data-world") || "ALL";
       updateFilterUI();
       filterCards();
     });
