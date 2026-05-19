@@ -28,7 +28,7 @@ const isFishingActive = currentPath === "/fishing";
 ---
 
 <nav
-  class="navbar-neon fixed top-0 w-full z-50 px-6 flex items-center justify-between h-16"
+  class="bg-[#030712] border-b border-purple-400/20 shadow-[0_2px_30px_rgba(0,0,0,0.8),0_1px_0_rgba(208,102,255,0.15)] fixed top-0 w-full z-50 px-6 flex items-center justify-between h-16"
 >
   <!-- Corner decorations -->
   <div
@@ -86,8 +86,7 @@ const isFishingActive = currentPath === "/fishing";
       >
         <span
           class="w-4 h-4 flex items-center justify-center"
-          set:html={bookIcon}
-        />
+          set:html={bookIcon}></span>
         Enchantments
       </a>
     </li>
@@ -103,8 +102,7 @@ const isFishingActive = currentPath === "/fishing";
       >
         <span
           class="w-4 h-4 flex items-center justify-center"
-          set:html={fishIcon}
-        />
+          set:html={fishIcon}></span>
         Fishing
       </a>
     </li>
@@ -120,8 +118,7 @@ const isFishingActive = currentPath === "/fishing";
       >
         <span
           class="w-4 h-4 flex items-center justify-center"
-          set:html={mapIcon}
-        />
+          set:html={mapIcon}></span>
         Live Map
       </a>
     </li>
@@ -133,21 +130,19 @@ const isFishingActive = currentPath === "/fishing";
     class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-purple-400/30 text-purple-400 hover:bg-purple-400/10 hover:shadow-[0_0_12px_rgba(191,0,255,0.3)] transition-all duration-300"
     aria-label="Menu"
   >
-    <span
-      class="w-5 h-5 flex items-center justify-center"
-      set:html={barsIcon}
-    />
+    <span class="w-5 h-5 flex items-center justify-center" set:html={barsIcon}
+    ></span>
   </button>
 </nav>
 
 <!-- Mobile menu panel -->
 <div
   id="mobile-menu"
-  class="lg:hidden fixed top-16 left-0 w-full z-40 glass-panel border-t-0 border-x-0 border-b border-purple-400/20 overflow-hidden transition-all duration-400 ease-in-out max-h-0"
+  class="lg:hidden fixed top-16 left-0 w-full z-40 bg-[#030712] border-t-0 border-x-0 border-b border-purple-400/20 overflow-hidden transition-all duration-400 ease-in-out max-h-0"
   style="box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 4px 20px rgba(191,0,255,0.08);"
 >
   <ul class="flex flex-col gap-2 p-4">
-    <li>
+    <!-- <li>
       <a
         href="/"
         class={`flex items-center gap-3 px-4 py-3 rounded-lg font-orbitron text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
@@ -162,7 +157,7 @@ const isFishingActive = currentPath === "/fishing";
         />
         Home
       </a>
-    </li>
+    </li> -->
     <li>
       <a
         href="/map"
@@ -174,8 +169,7 @@ const isFishingActive = currentPath === "/fishing";
       >
         <span
           class="w-5 h-5 flex items-center justify-center"
-          set:html={mapIcon}
-        />
+          set:html={mapIcon}></span>
         Live Map
       </a>
     </li>
@@ -190,8 +184,7 @@ const isFishingActive = currentPath === "/fishing";
       >
         <span
           class="w-5 h-5 flex items-center justify-center"
-          set:html={bookIcon}
-        />
+          set:html={bookIcon}></span>
         Enchantments
       </a>
     </li>
@@ -206,8 +199,7 @@ const isFishingActive = currentPath === "/fishing";
       >
         <span
           class="w-5 h-5 flex items-center justify-center"
-          set:html={fishIcon}
-        />
+          set:html={fishIcon}></span>
         Fishing
       </a>
     </li>
